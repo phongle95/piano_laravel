@@ -14,6 +14,8 @@
       <link rel="stylesheet" href="assets/css/bootstrap.min.css">
       <!-- Main CSS File -->
       <link rel="stylesheet" href="assets/css/style.min.css">
+
+      <link rel="stylesheet" href="assets/phone-css.css">
    </head>
    <body>
       <div class="page-wrapper">
@@ -22,7 +24,7 @@
             <div class="header-middle">
                <div class="container">
                   <div class="header-left">
-                     <a href="http://salem.com" class="logo">
+                     <a href="{{ route('Pages.trangchu') }}" class="logo">
                      <img src="assets/images/logosalem.png" width="160px" height="100px" alt="salem piano">
                      </a>
                   </div>
@@ -30,9 +32,10 @@
                   <div class="header-center">
                      <div class="header-search">
                         <a href="#" class="search-toggle" role="button"><i class="icon-magnifier"></i></a>
-                        <form action="#" method="get">
+                        <form action="{{ route('Pages.timkiem') }}" method="get">
+                                {{--  <input type="hidden" name="_token" value="{{ csrf_token() }}"/>  --}}
                            <div class="header-search-wrapper">
-                              <input type="search" class="form-control" name="q" id="q" placeholder="Tìm kiếm..."
+                              <input type="search" class="form-control" name="tukhoa"  placeholder="Tìm kiếm..."
                                  required>
                               <button class="btn" type="submit"><i class="icon-magnifier"></i></button>
                            </div>
@@ -110,25 +113,28 @@
                <div class="container">
                   <nav class="main-nav">
                      <ul class="menu sf-arrows">
-                        <li class=""><a href="http://salem.com"></a></li>
+                        <li class=""><a href="{{ route('Pages.trangchu') }}"></a></li>
                         <li>
-                           <a href="san-pham">Sản Phẩm</a>
+                           <a href="{{ route('Pages.sanpham') }}">Sản Phẩm</a>
                         </li>
                         <li>
                            <a href="gioi-thieu">Giới Thiệu</a>
                         </li>
                         <li>
-                           <a href="giao-duc">Giáo Dục</a>
+                            <a href="{{ route('Pages.giaoduc') }}">Giáo Dục</a>
+                        </li>
+                        <li>
+                            <a href="{{ route('Pages.video') }}">Video</a>
                         </li>
                         <li>
                            <a href="" class="sf-with-ul">Dịch Vụ</a>
                            <ul>
                               <li><a href="cart.html">Dịch Vụ Sửa Chửa</a></li>
                               <li><a href="about.html">Tổ Chức Sự Kiện</a></li>
-                              <li><a href="contact.html">Cho Thuê Nhạc Cụ</a></li>
+                              <li><a href="{{ route('Pages.gioithieu') }}">Cho Thuê Nhạc Cụ</a></li>
                            </ul>
                         </li>
-                        <li><a href="lien-he">Liên Hệ</a>
+                        <li><a href="{{ route('Pages.lienhe') }}">Liên Hệ</a>
                         </li>
                      </ul>
                   </nav>
@@ -140,6 +146,16 @@
          <!-- End .header -->
          <!--end-menu-tài -->
          @yield('noidung')
+         <div class='quick-call-button'></div>
+            <div class='call-now-button'>
+            <div><p class='call-text'></p>
+            <a href='tel:0394690908' title='Gọi ngay' >
+            <div class='quick-alo-ph-circle active'></div>
+            <div class='quick-alo-ph-circle-fill active'></div>
+            <div class='quick-alo-ph-img-circle shake'></div>
+            </a>
+            </div>
+            </div>
          <!--start footer tài -->
          <footer class="footer">
             <div class="footer-middle">
@@ -202,9 +218,9 @@
                                  <div class="row">
                                     <div class="col-sm-6 col-md-5">
                                        <ul class="links">
-                                          <li><a href="about.html">Sản Phẩm</a></li>
-                                          <li><a href="contact.html">Giới Thiệu</a></li>
-                                          <li><a href="my-account.html">Liên Hệ</a></li>
+                                          <li><a href="{{ route('Pages.sanpham') }}">Sản Phẩm</a></li>
+                                          <li><a href="{{ route('Pages.gioithieu') }}">Giới Thiệu</a></li>
+                                          <li><a href="{{ route('Pages.lienhe') }}">Liên Hệ</a></li>
                                        </ul>
                                     </div>
                                     <!-- End .col-sm-6 -->
@@ -277,13 +293,16 @@
             <nav class="mobile-nav">
                <ul class="mobile-menu">
                   <li>
-                     <a href="san-pham">Sản Phẩm</a>
+                     <a href="{{ route('Pages.sanpham') }}">Sản Phẩm</a>
                   </li>
                   <li>
-                     <a href="gioi-thieu">Giới Thiệu</a>
-                  </li>
+                        <a href="{{ route('Pages.gioithieu') }}">Giới Thiệu</a>
+                     </li>
+                    <li>
+                            <a href="{{ route('Pages.video') }}">Video</a>
+                    </li>
                   <li>
-                     <a href="giao-duc">Giáo Dục</a>
+                     <a href="{{ route('Pages.giaoduc') }}">Giáo Dục</a>
                   </li>
                   <li>
                      <a href="blog.html">Dịch Vụ</a>
@@ -294,7 +313,7 @@
                      </ul>
                   </li>
                   <li>
-                     <a href="">Liên Hệ</a>
+                     <a href="{{ route('Pages.lienhe') }}">Liên Hệ</a>
                   </li>
                </ul>
             </nav>

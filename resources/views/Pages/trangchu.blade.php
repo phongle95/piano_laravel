@@ -49,13 +49,13 @@
                   <h2>TOP THƯƠNG HIỆU</h2>
                   <div class="side-menu-body">
                      <ul>
-                        <li><a href=""><img src="https://img.icons8.com/color/40/000000/christmas-star.png"> Steinway & Sons</a></li>
-                        <li><a href=""><img src="https://img.icons8.com/color/40/000000/christmas-star.png">  Kawai</a></li>
-                        <li><a href=""> <img src="https://img.icons8.com/color/40/000000/christmas-star.png">  Baldwin</a></li>
-                        <li><a href=""> <img src="https://img.icons8.com/color/40/000000/christmas-star.png">  Yamaha</a></li>
-                        <li><a href=""><img src="https://img.icons8.com/color/40/000000/christmas-star.png">  Charles R.Walter</a></li>
+                        <li><a href="{{ route('Pages.sanpham') }}"><img src="https://img.icons8.com/color/40/000000/christmas-star.png"> Steinway & Sons</a></li>
+                        <li><a href="{{ route('Pages.sanpham') }}"><img src="https://img.icons8.com/color/40/000000/christmas-star.png">  Kawai</a></li>
+                        <li><a href="{{ route('Pages.sanpham') }}"> <img src="https://img.icons8.com/color/40/000000/christmas-star.png">  Baldwin</a></li>
+                        <li><a href="{{ route('Pages.sanpham') }}"> <img src="https://img.icons8.com/color/40/000000/christmas-star.png">  Yamaha</a></li>
+                        <li><a href="{{ route('Pages.sanpham') }}"><img src="https://img.icons8.com/color/40/000000/christmas-star.png">  Charles R.Walter</a></li>
                      </ul>
-                     <a href="#" class="btn btn-block btn-primary">SALEM PIANO Sale - <strong>10%</strong>
+                     <a href="{{ route('Pages.sanpham') }}" class="btn btn-block btn-primary">SALEM PIANO Sale - <strong>10%</strong>
                      On</a>
                   </div>
                   <!-- End .side-menu-body -->
@@ -115,7 +115,7 @@
             <div class="product">
                <figure class="product-image-container">
                   <a href="{{ route('Pages.chitiet',['slug' => str_slug($item->tenSP),'id'=>$item->id]) }}" class="product-image">
-                    <img src="/upload/{{ $item->img }}" alt="product">
+                    <img src="/upload/{{ $item->img }}"  alt="salem piano">
                   </a>
                </figure>
                <div class="product-details">
@@ -134,16 +134,16 @@
                   </div>
                   <!-- End .price-box -->
                   <div class="product-action">
-                     <a href="{{ route('Pages.chitiet',['slug' => str_slug($item->tenSP),'id'=>$item->id]) }}" class="paction add-wishlist" title="Add to Wishlist">
-                     <span>Add to Wishlist</span>
-                     </a>
-                     <a href="{{ route('Pages.chitiet',['slug' => str_slug($item->tenSP),'id'=>$item->id]) }}" class="paction add-cart" title="Mua Sản Phẩm">
-                     <span>Mua Sản Phẩm</span>
-                     </a>
-                     <a href="{{ route('Pages.chitiet',['slug' => str_slug($item->tenSP),'id'=>$item->id]) }}" class="paction add-compare" title="Add to Compare">
-                     <span>Add to Compare</span>
-                     </a>
-                  </div>
+                        <a href="tel:0394690908" class="paction add-wishlist" title="gọi ngay cho salem piano">
+                        <span>Add to Wishlist</span>
+                        </a>
+                        <a href="{{ route('Pages.chitiet',['slug' => str_slug($item->tenSP),'id'=>$item->id]) }}" class="paction add-cart" title="Mua Sản Phẩm">
+                        <span>Mua Sản Phẩm</span>
+                        </a>
+                        <a href="tel:0394690908" class="paction add-compare" title="gọi ngay cho salem piano">
+                        <span>Add to Compare</span>
+                        </a>
+                     </div>
                   <!-- End .product-action -->
                </div>
                <!-- End .product-details -->
@@ -167,7 +167,7 @@
             <div class="product">
                <figure class="product-image-container">
                   <a href="{{ route('Pages.chitiet',['slug' => str_slug($item->tenSP),'id'=>$item->id]) }}" class="product-image">
-                  <img src="/upload/{{ $item->img }}" alt="product">
+                  <img src="/upload/{{ $item->img }}" alt="salem piano">
                   </a>
                </figure>
                <div class="product-details">
@@ -186,13 +186,13 @@
                   </div>
                   <!-- End .price-box -->
                   <div class="product-action">
-                     <a href="{{ route('Pages.chitiet',['slug' => str_slug($item->tenSP),'id'=>$item->id]) }}" class="paction add-wishlist" title="Add to Wishlist">
+                     <a href="tel:0394690908" class="paction add-wishlist" title="gọi ngay cho salem piano">
                      <span>Add to Wishlist</span>
                      </a>
                      <a href="{{ route('Pages.chitiet',['slug' => str_slug($item->tenSP),'id'=>$item->id]) }}" class="paction add-cart" title="Mua Sản Phẩm">
                      <span>Mua Sản Phẩm</span>
                      </a>
-                     <a href="{{ route('Pages.chitiet',['slug' => str_slug($item->tenSP),'id'=>$item->id]) }}" class="paction add-compare" title="Add to Compare">
+                     <a href="tel:0394690908" class="paction add-compare" title="gọi ngay cho salem piano">
                      <span>Add to Compare</span>
                      </a>
                   </div>
@@ -217,8 +217,8 @@
          <div class="col-6 col-md-3">
             <div class="grid-product">
                <figure class="product-image-container">
-                  <a href="giaoduc.html" class="product-image">
-                  <img src="assets/images/daynhac.png" alt="product">
+                  <a href="{{ route('Pages.giaoduc') }}" class="product-image">
+                  <img src="assets/images/daynhac.png" alt="salem piano">
                   </a>
                   <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
                </figure>
@@ -231,10 +231,10 @@
                   </div>
                   <!-- End .product-container -->
                   <h2 class="product-title">
-                     <a href="giaoduc.html">Giáo Dục</a>
+                     <a href="{{ route('Pages.giaoduc') }}">Giáo Dục</a>
                   </h2>
                   <div class="product-grid-action">
-                     <a href="giaoduc.html" class="paction add-cart" title="Xem Chi Tiết">
+                     <a href="{{ route('Pages.giaoduc') }}" class="paction add-cart" title="Xem Chi Tiết">
                      <span>Xem Chi Tiết</span>
                      </a>
                   </div>
@@ -249,7 +249,7 @@
             <div class="grid-product">
                <figure class="product-image-container">
                   <a href="" class="product-image">
-                  <img src="assets/images/suachua.png" alt="product">
+                  <img src="assets/images/suachua.png" alt="salem piano">
                   </a>
                   <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
                   <!-- <span class="product-label label-sale">-20%</span>
@@ -282,7 +282,7 @@
             <div class="grid-product">
                <figure class="product-image-container">
                   <a href="" class="product-image">
-                  <img src="assets/images/chothue.png" alt="product">
+                  <img src="assets/images/chothue.png" alt="salem piano">
                   </a>
                   <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
                </figure>
@@ -313,7 +313,7 @@
             <div class="grid-product">
                <figure class="product-image-container">
                   <a href="" class="product-image">
-                  <img src="assets/images/tcsk.png" alt="product">
+                  <img src="assets/images/tcsk.png" alt="salem piano">
                   </a>
                   <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
                </figure>
@@ -353,7 +353,26 @@
             <div class="testimonial">
                <div class="testimonial-owner">
                   <figure>
-                     <img class="img-logo" src="https://cdn.trangcongnghe.com/uploads/posts/2016-11/irene-chang-hotgirl-9x-me-pokemon-go-nhu-dieu-do_3.jpeg"
+                     <img class="img-logo" src="https://znews-photo.zadn.vn/w660/Uploaded/neg_rtlzofn/2018_11_14/247164281720ed5dc9ef5k1482824185.jpg"
+                        alt="client">
+                  </figure>
+                  <div>
+                     <h4 class="testimonial-title">Thanh Hằn</h4>
+                     <span>hot girl đà nẵng</span>
+                  </div>
+               </div>
+               <!-- End .testimonial-owner -->
+               <blockquote>
+                  <p>Tại salem piano em được phục vụ tận tình tư vấn kĩ lưởng e thích nhất a salem đẹp
+                     trai
+                  </p>
+               </blockquote>
+            </div>
+            <!-- End .testimonial -->
+            <div class="testimonial">
+               <div class="testimonial-owner">
+                  <figure>
+                     <img class="img-logo" src="http://img.f50.bdpcdn.net/Assets/Media/2018/06/20/75/anh-6.jpg"
                         alt="client">
                   </figure>
                   <div>
@@ -376,26 +395,7 @@
                         alt="client">
                   </figure>
                   <div>
-                     <h4 class="testimonial-title">Trà My</h4>
-                     <span>hot girl đà nẵng</span>
-                  </div>
-               </div>
-               <!-- End .testimonial-owner -->
-               <blockquote>
-                  <p>Tại salem piano em được phục vụ tận tình tư vấn kĩ lưởng e thích nhất a salem đẹp
-                     trai
-                  </p>
-               </blockquote>
-            </div>
-            <!-- End .testimonial -->
-            <div class="testimonial">
-               <div class="testimonial-owner">
-                  <figure>
-                     <img class="img-logo" src="https://cdn.trangcongnghe.com/uploads/posts/2016-11/irene-chang-hotgirl-9x-me-pokemon-go-nhu-dieu-do_3.jpeg"
-                        alt="client">
-                  </figure>
-                  <div>
-                     <h4 class="testimonial-title">Trà My</h4>
+                     <h4 class="testimonial-title">Linh Đan</h4>
                      <span>hot girl đà nẵng</span>
                   </div>
                </div>

@@ -35,20 +35,20 @@ Route::get('san-pham',['uses'=>'TrangChuController@sanpham','as'=>'Pages.sanpham
 
 
 //gioi thieu
-Route::get('gioi-thieu', function () {
-    return view('Pages.gioithieu');
-});
+Route::get('gioi-thieu',['uses'=>'TrangChuController@gioithieu','as'=>'Pages.gioithieu'] );
 
 
 //lien he
-Route::get('lien-he', function () {
-    return view('Pages.lienhe');
-});
+Route::get('lien-he',['uses'=>'TrangChuController@lienhe','as'=>'Pages.lienhe'] );
 
 //giao duc
-Route::get('giao-duc', function () {
-    return view('Pages.giaoduc');
-});
+Route::get('giao-duc',['uses'=>'TrangChuController@giaoduc','as'=>'Pages.giaoduc'] );
+
+// tìm kiếm
+Route::get('tim-kiem',['uses'=>'TrangChuController@timkiem','as'=>'Pages.timkiem'] );
+
+// video
+Route::get('video',['uses'=>'TrangChuController@video','as'=>'Pages.video'] );
 
 
 
