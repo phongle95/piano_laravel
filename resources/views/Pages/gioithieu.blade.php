@@ -19,8 +19,7 @@
                đàn
                piano ở Salem Piano hoàn toàn yên tâm về sản phẩm chất lượng và xuất xứ chính hãng.
             </p>
-            <img class="custom-img img-fluid"
-               src="https://scontent.fdad1-1.fna.fbcdn.net/v/t1.0-9/47681675_974914839370064_3756747047009517568_o.jpg?_nc_cat=106&_nc_ht=scontent.fdad1-1.fna&oh=3ed0cfbdd611b44c8d78aad7eb120396&oe=5C8BF54C">
+            <img src="https://scontent.fdad2-1.fna.fbcdn.net/v/t1.0-9/53110863_1025630377631843_3581716662862217216_n.jpg?_nc_cat=107&_nc_oc=AQn5x4_iqvFkKaMkhD77fQG1ihnBsBdbtpinxNwQcg9ohHaqljJ_Dxzdu_YeGyixCYyyWInZyBHVKrEYHpc9H_qX&_nc_ht=scontent.fdad2-1.fna&oh=75ea1612f8ffcf4bcc82879c3640163f&oe=5D1D53F6" alt="salem">
             <p class="text-normal text-left"><br>
                Công ty bán nhiều hãng đàn piano nổi tiếng của Nhật từ cổ điển đến những phiên bản mới nhất. Nếu
                bạn là
@@ -53,7 +52,7 @@
                vấn để mua được cây đàn piano ưng ý nhất.
             </p>
             <img class="custom-img img-fluid"
-               src="https://scontent.fdad2-1.fna.fbcdn.net/v/t1.0-9/40797690_922850404576508_6521566706903547904_o.jpg?_nc_cat=107&_nc_ht=scontent.fdad2-1.fna&oh=2f35f059b95d3497d975a74b53a78a07&oe=5CCBAA80">
+               src="https://scontent.fdad1-1.fna.fbcdn.net/v/t1.0-9/51545826_1012960465565501_4543120778261954560_n.jpg?_nc_cat=105&_nc_oc=AQk7jIKBOeUkJCcbNLkvgJ62zynrDwrYiAqO4Sjf3M7FoBJd3gQBuwMoG6A3Q0-3-xxgQ9l-mEgIWowFJiV5v8FJ&_nc_ht=scontent.fdad1-1.fna&oh=ebeae0bcc88dde7b492ad9e660fb130a&oe=5D0A9C22">
             <p class="font-weight-bold text-left">
                <br> Cửa hàng Salem Piano cam kết đem đến cho khách hàng:
             </p>

@@ -3,12 +3,12 @@
 <!--start nội dung tài -->
 <main class="main">
    <div class="home-top-container">
-      <div class="container">
+      <div class="">
          <div class="row">
-            <div class="col-lg-9">
+            <div class="col-lg-12">
                <div class="home-slider owl-carousel owl-carousel-lazy">
                   <div class="home-slide">
-                     <div class="owl-lazy slide-bg" data-src="assets/images/1sl.png"></div>
+                     <div class="owl-lazy slide-bg custom-slide"  data-src="https://vietthuong.vn/image/catalog/1a-Tuvan/khaitruongq4-1920x500.jpg"></div>
                      <div class="home-slide-content text-white">
                         <h3>Giảm giá<span>10%</span> sản phẩm</h3>
                         <h1>Summer Sale</h1>
@@ -19,7 +19,7 @@
                   </div>
                   <!-- End .home-slide -->
                   <div class="home-slide">
-                     <div class="owl-lazy slide-bg" data-src="assets/images/2sl.png"></div>
+                     <div class="owl-lazy slide-bg custom-slide"  data-src="https://vietthuong.vn/image/catalog/2-ShowroomVietthuong/roland-1920x500.jpg"></div>
                      <div class="home-slide-content text-white">
                         <h3>Giảm giá<span>10%</span> sản phẩm</h3>
                         <h1>Summer Sale</h1>
@@ -30,21 +30,35 @@
                   </div>
                   <!-- End .home-slide -->
                   <div class="home-slide">
-                     <div class="owl-lazy slide-bg" data-src="assets/images/3sl.png"></div>
-                     <div class="home-slide-content text-white">
-                        <h3>Giảm giá<span>10%</span> sản phẩm</h3>
-                        <h1>Summer Sale</h1>
-                        <p>Xem chi tiết tại salem piano</p>
-                        <a href="" class="btn btn-dark">Chi Tiết</a>
-                     </div>
-                     <!-- End .home-slide-content -->
-                  </div>
+                    <div class="owl-lazy slide-bg custom-slide"  data-src="https://vietthuong.vn/image/catalog/1a-Tuvan/slide-vietthuong-thang-3-trong.png"></div>
+                    <div class="home-slide-content text-white">
+                       <h3>Giảm giá<span>10%</span> sản phẩm</h3>
+                       <h1>Summer Sale</h1>
+                       <p>Xem chi tiết tại salem piano</p>
+                       <a href="" class="btn btn-dark">Chi Tiết</a>
+                    </div>
+                    <!-- End .home-slide-content -->
+                 </div>
+                 <!-- End .home-slide -->
+
+
                   <!-- End .home-slide -->
+                  <div class="home-slide">
+                    <div class="owl-lazy slide-bg custom-slide"  data-src="https://vietthuong.vn/image/catalog/1a-Tuvan/slide-vietthuong-thang-3-piano.png"></div>
+                    <div class="home-slide-content text-white">
+                       <h3>Giảm giá<span>10%</span> sản phẩm</h3>
+                       <h1>Summer Sale</h1>
+                       <p>Xem chi tiết tại salem piano</p>
+                       <a href="" class="btn btn-dark">Chi Tiết</a>
+                    </div>
+                    <!-- End .home-slide-content -->
+                 </div>
+                 <!-- End .home-slide -->
                </div>
                <!-- End .home-slider -->
             </div>
             <!-- End .col-lg-9 -->
-            <div class="col-lg-3 order-lg-first">
+            {{-- <div class="col-lg-3 order-lg-first">
                <div class="side-custom-menu">
                   <h2>TOP THƯƠNG HIỆU</h2>
                   <div class="side-menu-body">
@@ -62,7 +76,7 @@
                </div>
                <!-- End .side-custom-menu -->
             </div>
-            <!-- End .col-lg-3 -->
+            <!-- End .col-lg-3 --> --}}
          </div>
          <!-- End .row -->
       </div>
@@ -113,42 +127,42 @@
 
 
             <div class="product">
-               <figure class="product-image-container">
-                  <a href="{{ route('Pages.chitiet',['slug' => str_slug($item->tenSP),'id'=>$item->id]) }}" class="product-image">
-                    <img src="/upload/{{ $item->img }}"  alt="salem piano">
-                  </a>
-               </figure>
-               <div class="product-details">
-                  <div class="ratings-container">
-                     <div class="product-ratings">
-                        <span class="ratings" style="width:80%"></span><!-- End .ratings -->
-                     </div>
-                     <!-- End .product-ratings -->
-                  </div>
-                  <!-- End .product-container -->
-                  <h2 class="product-title">
-                     <a href="chitiet.html">{{ $item->tenSP }}</a>
-                  </h2>
-                  <div class="price-box">
-                     <span style="color:red" class="product-price">{{number_format($item->gia) }}đ</span>
-                  </div>
-                  <!-- End .price-box -->
-                  <div class="product-action">
-                        <a href="tel:0394690908" class="paction add-wishlist" title="gọi ngay cho salem piano">
-                        <span>Add to Wishlist</span>
-                        </a>
-                        <a href="{{ route('Pages.chitiet',['slug' => str_slug($item->tenSP),'id'=>$item->id]) }}" class="paction add-cart" title="Mua Sản Phẩm">
-                        <span>Mua Sản Phẩm</span>
-                        </a>
-                        <a href="tel:0394690908" class="paction add-compare" title="gọi ngay cho salem piano">
-                        <span>Add to Compare</span>
-                        </a>
-                     </div>
-                  <!-- End .product-action -->
-               </div>
-               <!-- End .product-details -->
-            </div>
-            <!-- End .product -->
+                <figure class="product-image-container">
+                   <a href="{{ route('Pages.chitiet',['slug' => str_slug($item->tenSP),'id'=>$item->id]) }}" class="product-image">
+                   <img class="custom-image-product"  src="/upload/{{ $item->img }}" alt="salem piano">
+                   </a>
+                </figure>
+                <div class="product-details">
+                   <div class="ratings-container">
+                      <div class="product-ratings">
+                         <span class="ratings" style="width:80%"></span><!-- End .ratings -->
+                      </div>
+                      <!-- End .product-ratings -->
+                   </div>
+                   <!-- End .product-container -->
+                   <h2 class="product-title">
+                      <a href="">{{ $item->tenSP }}</a>
+                   </h2>
+                   <div class="price-box">
+                      <span style="color:red" class="product-price">{{number_format($item->gia) }}đ</span>
+                   </div>
+                   <!-- End .price-box -->
+                   <div class="product-action">
+                      <a href="tel:0394690908" class="paction add-wishlist" title="gọi ngay cho salem piano">
+                      <span>Add to Wishlist</span>
+                      </a>
+                      <a href="{{ route('Pages.chitiet',['slug' => str_slug($item->tenSP),'id'=>$item->id]) }}" class="paction add-cart" title="Mua Sản Phẩm">
+                      <span>Mua Sản Phẩm</span>
+                      </a>
+                      <a href="tel:0394690908" class="paction add-compare" title="gọi ngay cho salem piano">
+                      <span>Add to Compare</span>
+                      </a>
+                   </div>
+                   <!-- End .product-action -->
+                </div>
+                <!-- End .product-details -->
+             </div>
+             <!-- End .product -->
 
             @endforeach
          </div>
@@ -167,7 +181,7 @@
             <div class="product">
                <figure class="product-image-container">
                   <a href="{{ route('Pages.chitiet',['slug' => str_slug($item->tenSP),'id'=>$item->id]) }}" class="product-image">
-                  <img src="/upload/{{ $item->img }}" alt="salem piano">
+                  <img class="custom-image-product"  src="/upload/{{ $item->img }}" alt="salem piano">
                   </a>
                </figure>
                <div class="product-details">
@@ -210,142 +224,146 @@
       <!-- End .container -->
    </div>
    <!-- End .featured-section -->
-   <div class="container">
-   <h2 class="carousel-title">Dịch Vụ Của Salem piano</h2>
-   <div class="product-wrapper">
-      <div class="row row-sm category-grid">
-         <div class="col-6 col-md-3">
-            <div class="grid-product">
-               <figure class="product-image-container">
-                  <a href="{{ route('Pages.giaoduc') }}" class="product-image">
-                  <img src="assets/images/daynhac.png" alt="salem piano">
-                  </a>
-                  <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
-               </figure>
-               <div class="product-details">
-                  <div class="ratings-container">
-                     <div class="product-ratings">
-                        <span class="ratings" style="width:100%"></span><!-- End .ratings -->
+ <!-- End .featured-section -->
+ <div class="featured-section">
+        <div class="container">
+           <h2 class="carousel-title">dịch vụ của salem piano </h2>
+           <div class="featured-products owl-carousel owl-theme owl-dots-top">
+
+
+                <div class="product">
+                        <figure class="product-image-container">
+                           <a href="{{ route('Pages.giaoduc') }}" class="product-image">
+                           <img src="/assets/images/daynhac.png" alt="salem piano">
+                           </a>
+                        </figure>
+                        <div class="product-details">
+                           <div class="ratings-container">
+                              <div class="product-ratings">
+                                 <span class="ratings" style="width:90%"></span><!-- End .ratings -->
+                              </div>
+                              <!-- End .product-ratings -->
+                           </div>
+                           <!-- End .product-container -->
+                           <h2 class="product-title">
+                              <a href="">Giáo Dục</a>
+                           </h2>
+
+                           <!-- End .price-box -->
+                           <div class="product-action">
+
+                                   <a href="{{ route('Pages.giaoduc') }}"  type="submit" class="btn btn-primary">Chi Tiết</a>
+
+                           </div>
+                           <!-- End .product-action -->
+                        </div>
+                        <!-- End .product-details -->
                      </div>
-                     <!-- End .product-ratings -->
-                  </div>
-                  <!-- End .product-container -->
-                  <h2 class="product-title">
-                     <a href="{{ route('Pages.giaoduc') }}">Giáo Dục</a>
-                  </h2>
-                  <div class="product-grid-action">
-                     <a href="{{ route('Pages.giaoduc') }}" class="paction add-cart" title="Xem Chi Tiết">
-                     <span>Xem Chi Tiết</span>
-                     </a>
-                  </div>
-                  <!-- End .product-action -->
-               </div>
-               <!-- End .product-details -->
-            </div>
-            <!-- End .product -->
-         </div>
-         <!-- End .col-md-4 -->
-         <div class="col-6 col-md-3">
-            <div class="grid-product">
-               <figure class="product-image-container">
-                  <a href="" class="product-image">
-                  <img src="assets/images/suachua.png" alt="salem piano">
-                  </a>
-                  <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
-                  <!-- <span class="product-label label-sale">-20%</span>
-                     <span class="product-label label-hot">New</span> -->
-               </figure>
-               <div class="product-details">
-                  <div class="ratings-container">
-                     <div class="product-ratings">
-                        <span class="ratings" style="width:100%"></span><!-- End .ratings -->
-                     </div>
-                     <!-- End .product-ratings -->
-                  </div>
-                  <!-- End .product-container -->
-                  <h2 class="product-title">
-                     <a href="">Sửa Chửa</a>
-                  </h2>
-                  <div class="product-grid-action">
-                     <a href="" class="paction add-cart" title="Xem Chi Tiết">
-                     <span>Xem Chi Tiết</span>
-                     </a>
-                  </div>
-                  <!-- End .product-action -->
-               </div>
-               <!-- End .product-details -->
-            </div>
-            <!-- End .product -->
-         </div>
-         <!-- End .col-md-4 -->
-         <div class="col-6 col-md-3">
-            <div class="grid-product">
-               <figure class="product-image-container">
-                  <a href="" class="product-image">
-                  <img src="assets/images/chothue.png" alt="salem piano">
-                  </a>
-                  <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
-               </figure>
-               <div class="product-details">
-                  <div class="ratings-container">
-                     <div class="product-ratings">
-                        <span class="ratings" style="width:100%"></span><!-- End .ratings -->
-                     </div>
-                     <!-- End .product-ratings -->
-                  </div>
-                  <!-- End .product-container -->
-                  <h2 class="product-title">
-                     <a href="">Cho Thuê Nhạc Cụ</a>
-                  </h2>
-                  <div class="product-grid-action">
-                     <a href="" class="paction add-cart" title="Xem Chi Tiết">
-                     <span>Xem Chi Tiết</span>
-                     </a>
-                  </div>
-                  <!-- End .product-action -->
-               </div>
-               <!-- End .product-details -->
-            </div>
-            <!-- End .product -->
-         </div>
-         <!-- End .col-md-4 -->
-         <div class="col-6 col-md-3">
-            <div class="grid-product">
-               <figure class="product-image-container">
-                  <a href="" class="product-image">
-                  <img src="assets/images/tcsk.png" alt="salem piano">
-                  </a>
-                  <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
-               </figure>
-               <div class="product-details">
-                  <div class="ratings-container">
-                     <div class="product-ratings">
-                        <span class="ratings" style="width:100%"></span><!-- End .ratings -->
-                     </div>
-                     <!-- End .product-ratings -->
-                  </div>
-                  <!-- End .product-container -->
-                  <h2 class="product-title">
-                     <a href="">Tổ Chức Sự Kiện</a>
-                  </h2>
-                  <div class="price-box">
-                  </div>
-                  <!-- End .price-box -->
-                  <div class="product-grid-action">
-                     <a href="" class="paction add-cart" title="Xem Chi Tiết">
-                     <span>Xem Chi Tiết</span>
-                     </a>
-                  </div>
-                  <!-- End .product-action -->
-               </div>
-               <!-- End .product-details -->
-            </div>
-            <!-- End .product -->
-         </div>
-         <!-- End .col-md-4 -->
-      </div>
-      <!-- End .row -->
-   </div>
+                     <!-- End .product -->
+
+                     <div class="product">
+                            <figure class="product-image-container">
+                               <a href="" class="product-image">
+                               <img src="assets/images/suachua.png" alt="salem piano">
+                               </a>
+                            </figure>
+                            <div class="product-details">
+                               <div class="ratings-container">
+                                  <div class="product-ratings">
+                                     <span class="ratings" style="width:80%"></span><!-- End .ratings -->
+                                  </div>
+                                  <!-- End .product-ratings -->
+                               </div>
+                               <!-- End .product-container -->
+                               <h2 class="product-title">
+                                  <a href="">Sửa Chữa</a>
+                               </h2>
+
+                               <!-- End .price-box -->
+                               <div class="product-action">
+
+                                       <a href=""  type="submit" class="btn btn-primary">Chi Tiết</a>
+
+                               </div>
+                               <!-- End .product-action -->
+                            </div>
+                            <!-- End .product-details -->
+                         </div>
+                         <!-- End .product -->
+
+                         <div class="product">
+                                <figure class="product-image-container">
+                                   <a href="" class="product-image">
+                                   <img src="assets/images/chothue.png" alt="salem piano">
+                                   </a>
+                                </figure>
+                                <div class="product-details">
+                                   <div class="ratings-container">
+                                      <div class="product-ratings">
+                                         <span class="ratings" style="width:90%"></span><!-- End .ratings -->
+                                      </div>
+                                      <!-- End .product-ratings -->
+                                   </div>
+                                   <!-- End .product-container -->
+                                   <h2 class="product-title">
+                                      <a href="">Cho Thuê</a>
+                                   </h2>
+
+                                   <!-- End .price-box -->
+                                   <div class="product-action">
+
+                                           <a href=""  type="submit" class="btn btn-primary">Chi Tiết</a>
+
+                                   </div>
+                                   <!-- End .product-action -->
+                                </div>
+                                <!-- End .product-details -->
+                             </div>
+                             <!-- End .product -->
+
+                             <div class="product">
+                                    <figure class="product-image-container">
+                                       <a href="" class="product-image">
+                                       <img src="assets/images/tcsk.png" alt="salem piano">
+                                       </a>
+                                    </figure>
+                                    <div class="product-details">
+                                       <div class="ratings-container">
+                                          <div class="product-ratings">
+                                             <span class="ratings" style="width:80%"></span><!-- End .ratings -->
+                                          </div>
+                                          <!-- End .product-ratings -->
+                                       </div>
+                                       <!-- End .product-container -->
+                                       <h2 class="product-title">
+                                          <a href="">Tổ Chức Sự Kiện</a>
+                                       </h2>
+
+                                       <!-- End .price-box -->
+                                       <div class="product-action">
+
+                                               <a href=""  type="submit" class="btn btn-primary">Chi Tiết</a>
+
+                                       </div>
+                                       <!-- End .product-action -->
+                                    </div>
+                                    <!-- End .product-details -->
+                                 </div>
+                                 <!-- End .product -->
+
+
+           </div>
+           <!-- End .featured-proucts -->
+        </div>
+        <!-- End .container -->
+     </div>
+     <!-- End .featured-section -->
+
+
+
+
+
+
    <div class="testimonials-section">
       <div class="container">
          <h2 class="subtitle text-center">Ý KIẾN KHÁCH HÀNG</h2>

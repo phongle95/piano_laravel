@@ -161,42 +161,42 @@
 
 
                     <div class="product">
-                       <figure class="product-image-container">
-                          <a href="{{ route('Pages.chitiet',['slug' => str_slug($item->tenSP),'id'=>$item->id]) }}" class="product-image">
-                            <img src="/upload/{{ $item->img }}" alt="product">
-                          </a>
-                       </figure>
-                       <div class="product-details">
-                          <div class="ratings-container">
-                             <div class="product-ratings">
-                                <span class="ratings" style="width:80%"></span><!-- End .ratings -->
-                             </div>
-                             <!-- End .product-ratings -->
-                          </div>
-                          <!-- End .product-container -->
-                          <h2 class="product-title">
-                             <a href="chitiet.html">{{ $item->tenSP }}</a>
-                          </h2>
-                          <div class="price-box">
-                             <span style="color:red" class="product-price">{{number_format($item->gia) }}đ</span>
-                          </div>
-                          <!-- End .price-box -->
-                          <div class="product-action">
-                                <a href="tel:0394690908" class="paction add-wishlist" title="gọi ngay cho salem piano">
-                                <span>Add to Wishlist</span>
-                                </a>
-                                <a href="{{ route('Pages.chitiet',['slug' => str_slug($item->tenSP),'id'=>$item->id]) }}" class="paction add-cart" title="Mua Sản Phẩm">
-                                <span>Mua Sản Phẩm</span>
-                                </a>
-                                <a href="tel:0394690908" class="paction add-compare" title="gọi ngay cho salem piano">
-                                <span>Add to Compare</span>
-                                </a>
-                             </div>
-                          <!-- End .product-action -->
-                       </div>
-                       <!-- End .product-details -->
-                    </div>
-                    <!-- End .product -->
+                        <figure class="product-image-container">
+                           <a href="{{ route('Pages.chitiet',['slug' => str_slug($item->tenSP),'id'=>$item->id]) }}" class="product-image">
+                           <img class="custom-image-product"  src="/upload/{{ $item->img }}" alt="salem piano">
+                           </a>
+                        </figure>
+                        <div class="product-details">
+                           <div class="ratings-container">
+                              <div class="product-ratings">
+                                 <span class="ratings" style="width:80%"></span><!-- End .ratings -->
+                              </div>
+                              <!-- End .product-ratings -->
+                           </div>
+                           <!-- End .product-container -->
+                           <h2 class="product-title">
+                              <a href="">{{ $item->tenSP }}</a>
+                           </h2>
+                           <div class="price-box">
+                              <span style="color:red" class="product-price">{{number_format($item->gia) }}đ</span>
+                           </div>
+                           <!-- End .price-box -->
+                           <div class="product-action">
+                              <a href="tel:0394690908" class="paction add-wishlist" title="gọi ngay cho salem piano">
+                              <span>Add to Wishlist</span>
+                              </a>
+                              <a href="{{ route('Pages.chitiet',['slug' => str_slug($item->tenSP),'id'=>$item->id]) }}" class="paction add-cart" title="Mua Sản Phẩm">
+                              <span>Mua Sản Phẩm</span>
+                              </a>
+                              <a href="tel:0394690908" class="paction add-compare" title="gọi ngay cho salem piano">
+                              <span>Add to Compare</span>
+                              </a>
+                           </div>
+                           <!-- End .product-action -->
+                        </div>
+                        <!-- End .product-details -->
+                     </div>
+                     <!-- End .product -->
 
                     @endforeach
 

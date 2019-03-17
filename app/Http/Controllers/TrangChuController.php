@@ -14,6 +14,7 @@ class TrangChuController extends Controller
     }
 
     public function chitiet($slug, $id){
+        // echo 'phuong'.$slug.'phong'.$id;
         $piano = sanpham::where('maSP',1)->with('LoaiSanPham')->orderBy('id','DESC')->limit(6)->get();
         $chitiet = sanpham::find($id);
         return view('Pages.chitiet',['chitiet'=>$chitiet,'piano'=>$piano]);

@@ -28,27 +28,27 @@ Route::get('/', function () {
 Route::get('',['uses'=>'TrangChuController@trangchu','as'=>'Pages.trangchu'] );
 
 //chitiet
-Route::get('{slug}-{id}.html',['uses'=>'TrangChuController@chitiet','as'=>'Pages.chitiet'] );
+Route::get('piano-gia-re-tai-da-nang-{slug}-{id}.html',['uses'=>'TrangChuController@chitiet','as'=>'Pages.chitiet'] );
 
 //san pham
-Route::get('san-pham',['uses'=>'TrangChuController@sanpham','as'=>'Pages.sanpham'] );
+Route::get('san-pham-dan-piano-tai-da-nang-cua-salem-piano',['uses'=>'TrangChuController@sanpham','as'=>'Pages.sanpham'] );
 
 
 //gioi thieu
-Route::get('gioi-thieu',['uses'=>'TrangChuController@gioithieu','as'=>'Pages.gioithieu'] );
+Route::get('gioi-thieu-ve-salem-piano',['uses'=>'TrangChuController@gioithieu','as'=>'Pages.gioithieu'] );
 
 
 //lien he
-Route::get('lien-he',['uses'=>'TrangChuController@lienhe','as'=>'Pages.lienhe'] );
+Route::get('lien-he-voi-salem-piano',['uses'=>'TrangChuController@lienhe','as'=>'Pages.lienhe'] );
 
 //giao duc
-Route::get('giao-duc',['uses'=>'TrangChuController@giaoduc','as'=>'Pages.giaoduc'] );
+Route::get('day-hoc-dan-piano-o-da-nang',['uses'=>'TrangChuController@giaoduc','as'=>'Pages.giaoduc'] );
 
 // tìm kiếm
-Route::get('tim-kiem',['uses'=>'TrangChuController@timkiem','as'=>'Pages.timkiem'] );
+Route::get('piano-da-nang-',['uses'=>'TrangChuController@timkiem','as'=>'Pages.timkiem'] );
 
 // video
-Route::get('video',['uses'=>'TrangChuController@video','as'=>'Pages.video'] );
+Route::get('video-cua-salem-piano',['uses'=>'TrangChuController@video','as'=>'Pages.video'] );
 
 
 

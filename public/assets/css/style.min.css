@@ -986,7 +986,8 @@ a:focus {
 	border: 1px solid #dbe0e2;
 	border-radius: 20px;
 	background-color: #fff;
-	overflow: visible
+    overflow: visible;
+    margin-right: 45px;
 }
 
 .header-search .header-search-wrapper::after {
@@ -1153,7 +1154,7 @@ a:focus {
 }
 
 .header-bottom {
-	background-color: #f4f4f4
+	background-color: white;
 }
 
 .header-bottom .container,
@@ -1628,7 +1629,7 @@ a:focus {
 .menu li:hover>a,
 .menu li.show>a,
 .menu li.active>a {
-	background-color: #f4f4f4;
+	background-color: white;
 	color: #696969
 }
 
@@ -1888,11 +1889,12 @@ a:focus {
 .sticky-header.fixed {
 	position: fixed;
 	top: 0;
-	right: 0;
+    right: 0;
 	left: 0;
-	padding-top: .6rem;
-	padding-bottom: .6rem;
-	background-color: black;
+	padding-top: 30px;
+	padding-bottom: 30px;
+    background-color: yellow;
+    color: black;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 	z-index: 1040;
 	-webkit-animation-duration: .4s;
@@ -1917,7 +1919,7 @@ a:focus {
 .sticky-header.fixed .menu>li>a {
 	padding-top: .55rem;
 	padding-bottom: .55rem;
-	color: #fff
+	color: black;
 }
 
 .sticky-header.fixed .menu>li>a .tip {
@@ -1927,8 +1929,8 @@ a:focus {
 .sticky-header.fixed .menu>li:hover>a,
 .sticky-header.fixed .menu>li.show>a,
 .sticky-header.fixed .menu>li.active>a {
-	background-color: #fff;
-	color: #231f20;
+	background-color: black;
+	color: yellow;
 }
 
 .sticky-header.fixed .logo,
@@ -2300,8 +2302,36 @@ a:focus {
 }
 
 .product-image {
-	display: block
+    display: block;
+    height: 244px;
 }
+
+.product .product-image-container .custom-image-product{
+    height: 244px;
+}
+
+@media (max-width: 1400px) {
+	.product-image {
+        display: block;
+        height: 154px;
+    }
+
+    .product .product-image-container .custom-image-product{
+        height: 154px;
+    }
+
+    .product-details {
+        text-align: center;
+        height: 150px;
+        bottom: 0;
+    }
+
+}
+
+
+/* .product .product-image-container .custom-image-product{
+    height: 154px;
+} */
 
 .product-image::after {
 	position: absolute;
@@ -2417,7 +2447,7 @@ a:focus {
 	height: 43px;
 	transition: all .3s;
 	border: 1px solid #d8d8d6;
-	background-color: #f4f4f4;
+	background-color: white;
 	color: #302e2a;
 	font-family: 'porto';
 	font-size: 1.8rem;
@@ -4568,7 +4598,7 @@ a:focus {
 	padding: 1.2rem 1.5rem;
 	border: 1px solid #ddd;
 	border-radius: .1rem;
-	background-color: #f4f4f4;
+	background-color: white;
 	color: #777;
 	text-align: left
 }
@@ -4633,8 +4663,8 @@ a:focus {
 }
 
 .info-boxes-container {
-	margin-bottom: 2.7rem;
-	background-color: #f4f4f4
+	/* margin-bottom: 2.7rem; */
+	background-color: white;
 }
 
 .info-boxes-container .container,
@@ -4845,7 +4875,7 @@ a:focus {
 .testimonial-owner figure {
 	max-width: 60px;
 	margin-right: 25px;
-	
+
 }
 .text-normal{
 	font-family: Arial, Helvetica, sans-serif;
@@ -5686,7 +5716,7 @@ a:focus {
 	padding: 1.75rem 2rem;
 	border: .1rem solid #dae2e6;
 	border-radius: .3rem .3rem 0 0;
-	background-color: #f4f4f4;
+	background-color: white;
 	font: 700 1.4rem/1 "Open Sans", sans-serif;
 	text-transform: uppercase
 }
@@ -5762,7 +5792,7 @@ a:focus {
 .featured-section {
 	padding-top: 5.8rem;
 	padding-bottom: 8rem;
-	background-color: #f4f4f4
+	background-color: white
 }
 
 @media screen and (min-width: 576px) {
@@ -6202,7 +6232,7 @@ a:focus {
 .horizontal-filter {
 	margin-bottom: 18px;
 	padding: 1.2rem 1rem;
-	background-color: #f4f4f4
+	background-color: white
 }
 
 .horizontal-filter .price-sort {
@@ -6824,7 +6854,7 @@ a:focus {
 	min-width: 3rem;
 	height: 3rem;
 	border: 1px solid #dae2e6;
-	background-color: #f4f4f4;
+	background-color: white;
 	color: #21293c;
 	font-size: 1.5rem;
 	font-weight: 600;
@@ -6834,14 +6864,14 @@ a:focus {
 .product-single-filter .config-size-list li a:hover,
 .product-single-filter .config-size-list li a:focus {
 	border-color: #08c;
-	background-color: #f4f4f4;
+	background-color: white;
 	color: #21293c
 }
 
 .product-single-filter .config-size-list li.active a {
 	border-color: #08c;
 	outline: none;
-	background-color: #f4f4f4;
+	background-color: white;
 	color: #21293c
 }
 
@@ -7112,7 +7142,7 @@ a:focus {
 .featured-section {
 	padding-top: 3.8rem;
 	padding-bottom: 6rem;
-	background-color: #f4f4f4
+	background-color: white
 }
 
 .featured-section.bg-white {
@@ -7387,7 +7417,7 @@ a:focus {
 
 .single-qty-wrapper .product-single-qty .horizontal-quantity {
 	height: 30px;
-	background-color: #f4f4f4
+	background-color: white
 }
 
 .single-qty-wrapper .product-single-qty .btn.btn-outline {
@@ -8812,7 +8842,7 @@ tbody .product-col {
 	margin-bottom: .3rem;
 	padding: 1rem .2rem;
 	border-radius: .2rem .2rem 0 0;
-	background-color: #f4f4f4;
+	background-color: white;
 	color: #4a4a4a;
 	font-size: 1.6rem;
 	font-weight: 700;
@@ -9347,7 +9377,28 @@ tbody .product-col {
 	position: relative;
 	-ms-touch-action: pan-Y;
 	touch-action: manipulation;
-	-moz-backface-visibility: hidden
+    -moz-backface-visibility: hidden;
+    height: 500px;
+}
+
+.home-slide .custom-slide{
+    height: 500px;
+}
+
+@media (max-width: 999px) {
+	.owl-carousel .owl-stage {
+        position: relative;
+        -ms-touch-action: pan-Y;
+        touch-action: manipulation;
+        -moz-backface-visibility: hidden;
+        height: 200px;
+        width: 100%;
+    }
+
+    .home-slide .custom-slide{
+        height: 200px;
+         width: 100%;
+    }
 }
 
 .owl-carousel .owl-stage:after {
@@ -9356,7 +9407,6 @@ tbody .product-col {
 	clear: both;
 	visibility: hidden;
 	line-height: 0;
-	height: 0
 }
 
 .owl-carousel .owl-stage-outer {

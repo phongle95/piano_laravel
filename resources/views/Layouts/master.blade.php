@@ -16,6 +16,8 @@
       <link rel="stylesheet" href="assets/css/style.min.css">
 
       <link rel="stylesheet" href="assets/phone-css.css">
+   <link rel="stylesheet" href="assets/card">
+
    </head>
    <body>
       <div class="page-wrapper">
@@ -53,56 +55,7 @@
                         <span>Gọi Cho Chúng tôi</span>
                         <a href="tel:#"><strong style="color:#231f20">039 469 0908</strong></a>
                      </div>
-                     <!-- End .header-contact -->
-                     <div class="dropdown cart-dropdown">
-                        <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown"
-                           aria-haspopup="true" aria-expanded="false" data-display="static">
-                        <span class="cart-count">2</span>
-                        </a>
-                        <div class="dropdown-menu">
-                           <div class="dropdownmenu-wrapper">
-                              <div class="dropdown-cart-header">
-                                 <span>Sản Phẩm Mới</span>
-                                 <a href="cart.html">Tất Cả</a>
-                              </div>
 
-                              <!-- End .dropdown-cart-header -->
-                              <div class="dropdown-cart-products">
-                                  @foreach ($pianoshare as $piano)
-
-
-                                 <div class="product">
-                                    <div class="product-details">
-                                       <h4 class="product-title">
-                                          <a href="{{ route('Pages.chitiet',['slug' => str_slug($piano->tenSP),'id'=>$piano->id]) }}">{{ $piano->tenSP }}</a>
-                                       </h4>
-                                       <span class="cart-product-info">
-                                          <p style="color:red"> {{number_format($piano->gia) }}đ</p>
-                                       </span>
-                                    </div>
-                                    <!-- End .product-details -->
-                                    <figure class="product-image-container">
-                                       <a href="{{ route('Pages.chitiet',['slug' => str_slug($piano->tenSP),'id'=>$piano->id]) }}" class="product-image">
-                                       <img src="/upload/{{ $piano->img }}" alt="salem piano">
-                                       </a>
-                                       <a href="#" class="btn-remove" title="Remove Product"><i
-                                          class="icon-cancel"></i></a>
-                                    </figure>
-                                 </div>
-                                 @endforeach
-
-                              </div>
-                              <!-- End .cart-product -->
-                              <div class="dropdown-cart-action">
-                                 <a href="{{ route('Pages.sanpham') }}" class="btn btn-block">Toàn Bộ Sản Phẩm</a>
-                              </div>
-                              <!-- End .dropdown-cart-total -->
-                           </div>
-                           <!-- End .dropdownmenu-wrapper -->
-                        </div>
-                        <!-- End .dropdown-menu -->
-                     </div>
-                     <!-- End .dropdown -->
                   </div>
                   <!-- End .header-right -->
                </div>
@@ -118,7 +71,7 @@
                            <a href="{{ route('Pages.sanpham') }}">Sản Phẩm</a>
                         </li>
                         <li>
-                           <a href="gioi-thieu">Giới Thiệu</a>
+                           <a href="{{ route('Pages.gioithieu') }}">Giới Thiệu</a>
                         </li>
                         <li>
                             <a href="{{ route('Pages.giaoduc') }}">Giáo Dục</a>
