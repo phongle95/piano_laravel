@@ -82,7 +82,7 @@ class KhachHangcontroller extends Controller
     }
 
 
-    public function postSuaKhach(khachHangRequest $request,$id){
+    public function postSuaKhach(Request $request,$id){
         $khachhang = KhachHang::find($id);
         $khachhang->tenKH = $request->tenKH;
         $khachhang->diaChi = $request->diaChi;

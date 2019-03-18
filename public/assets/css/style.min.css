@@ -5468,7 +5468,7 @@ a:focus {
 }
 
 .home-top-container {
-	padding-top: 2.7rem
+	padding-top: 1.7rem
 }
 
 .owl-carousel-lazy.owl-carousel {
@@ -9378,28 +9378,8 @@ tbody .product-col {
 	-ms-touch-action: pan-Y;
 	touch-action: manipulation;
     -moz-backface-visibility: hidden;
-    height: 500px;
 }
 
-.home-slide .custom-slide{
-    height: 500px;
-}
-
-@media (max-width: 999px) {
-	.owl-carousel .owl-stage {
-        position: relative;
-        -ms-touch-action: pan-Y;
-        touch-action: manipulation;
-        -moz-backface-visibility: hidden;
-        height: 200px;
-        width: 100%;
-    }
-
-    .home-slide .custom-slide{
-        height: 200px;
-         width: 100%;
-    }
-}
 
 .owl-carousel .owl-stage:after {
 	content: ".";

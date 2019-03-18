@@ -23,15 +23,18 @@
 
 
                     <div class="row">
-                            <div class="col-lg-5">
+                            <div class="col-sm-5">
                                 <figure class="product-image-container">
                                     <a href="{{ route('Pages.chitiet',['slug' => str_slug($kq->tenSP),'id'=>$kq->id]) }}" class="product-image">
                                     <img src="/upload/{{ $kq->img }}" alt="product">
                                     </a>
                                 </figure>
+                                <br><br><br><br>
                             </div>
 
-                            <div class="col-lg-7">
+
+                            <div class="col-sm-7">
+                                    <br><br><br>
                                    <a href="{{ route('Pages.chitiet',['slug' => str_slug($kq->tenSP),'id'=>$kq->id]) }}"> <h3 style="text-align:center;font-weight: 600;">{{ $kq->tenSP }}</h3></a>
                                     <p  style="text-align:center;font-weight: 600;">Giá : <span style="color:red">{{ number_format($kq->gia) }}</span> đ </p>
 

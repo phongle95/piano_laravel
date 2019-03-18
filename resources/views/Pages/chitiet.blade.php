@@ -154,7 +154,7 @@
 
         <div class="featured-section">
            <div class="container">
-              <h2 class="carousel-title">SẢN PHẨM LIÊN QUAN</h2>
+              <h2 class="carousel-title">SẢN PHẨM HÓT</h2>
 
               <div class="featured-products owl-carousel owl-theme owl-dots-top">
                     @foreach ($piano as $item)

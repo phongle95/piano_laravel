@@ -37,6 +37,15 @@ Route::get('san-pham-dan-piano-tai-da-nang-cua-salem-piano',['uses'=>'TrangChuCo
 //gioi thieu
 Route::get('gioi-thieu-ve-salem-piano',['uses'=>'TrangChuController@gioithieu','as'=>'Pages.gioithieu'] );
 
+//dich vu sua chua
+Route::get('sua-chua-dan-piano-tai-da-nang',['uses'=>'TrangChuController@suachua','as'=>'Pages.suachua'] );
+
+//to chuc su kien
+Route::get('to-chuc-su-kien-tai-da-nang',['uses'=>'TrangChuController@TCSK','as'=>'Pages.tochucsukien'] );
+
+//to chuc su kien
+Route::get('cho-thue-dan-piano-tai-da-nang',['uses'=>'TrangChuController@CTNC','as'=>'Pages.chothuenhaccu'] );
+
 
 //lien he
 Route::get('lien-he-voi-salem-piano',['uses'=>'TrangChuController@lienhe','as'=>'Pages.lienhe'] );
