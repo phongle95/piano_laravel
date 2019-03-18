@@ -32,6 +32,7 @@
                                    </div>
                                 </div>
                              </div>
+                             <br>
                              <div class="row">
                                     <div class="col-md-12">
                                        <div class="form-group">
@@ -40,6 +41,7 @@
                                        </div>
                                     </div>
                                  </div>
+                                 <br>
                                   <div class="row">
                                     <div class="col-md-12">
                                         <label class="bmd-label-floating" style="color:black;font-weight: 600">Chọn hình</label>
@@ -58,12 +60,14 @@
                            </div>
                         </div>
                      </div>
+                     <br>
                      <div class="row">
                             <div class="form-group col-md-12">
                                     <label style="color:black;font-weight: 600">Mô tả sản phẩm</label><br>
                                     <textarea name="MTSP" class="form-control "id="editor1">{{ old('MTSP') }}</textarea>
                            </div>
                       </div>
+                      <br>
                       <div class="row">
                             <div class="form-group col-md-12">
                                     <label style="color:black;font-weight: 600">Thông số kĩ thuật</label><br>

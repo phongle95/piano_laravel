@@ -103,11 +103,23 @@
                      </a>
                   </li>
                   <li class="nav-item ">
-                     <a class="nav-link" href="{{ route('PageAdmin.sanpham.danhsach') }}">
-                        <i class="material-icons">library_books</i>
-                        <p>Danh sách sản phẩm</p>
-                     </a>
-                  </li>
+                    <a class="nav-link" href="{{ route('PageAdmin.sanpham.danhsach') }}">
+                       <i class="material-icons">library_books</i>
+                       <p>Danh sách sản phẩm</p>
+                    </a>
+                 </li>
+                 <li class="nav-item ">
+                    <a class="nav-link" href="{{ route('PageAdmin.menu.danhsach') }}">
+                       <i class="material-icons">library_books</i>
+                       <p>Danh sách menu</p>
+                    </a>
+                 </li>
+                 <li class="nav-item ">
+                    <a class="nav-link" href="{{ route('PageAdmin.khachhang.danhsach') }}">
+                       <i class="material-icons">library_books</i>
+                       <p>Danh sách đánh giá</p>
+                    </a>
+                 </li>
                   <li class="nav-item ">
                      <a class="nav-link" href="">
                         <i class="material-icons">notifications</i>
@@ -484,32 +496,45 @@
          CKFinder.setupCKEditor();
          CKEDITOR.replace( 'editor1' );
       </script>
-       <script>
-         CKFinder.setupCKEditor();
-         CKEDITOR.replace( 'editor2' );
-      </script>
-
-     <script type="text/javascript">
-         CKEDITOR.replace( 'editor1', {
-           filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
-           filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
-           filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
-           filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
-           filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
-           filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}'
-         });
+      <script>
+        CKFinder.setupCKEditor();
+        CKEDITOR.replace( 'editor2' );
+     </script>
+     <script>
+        CKFinder.setupCKEditor();
+        CKEDITOR.replace( 'editor3' );
      </script>
 
       <script type="text/javascript">
-         CKEDITOR.replace( 'editor2', {
-           filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
-           filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
-           filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
-           filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
-           filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
-           filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}'
-         });
-     </script>
+        CKEDITOR.replace( 'editor1', {
+            filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+            filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+            filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+            filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+            filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+            filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}'
+          });
+          CKEDITOR.replace( 'editor2', {
+            filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+            filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+            filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+            filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+            filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+            filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}'
+          });
+          CKEDITOR.replace( 'editor3', {
+            filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+            filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+            filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+            filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+            filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+            filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}'
+          });
+
+    </script>
+
+
+
 
      <script>
             var x, i, j, selElmnt, a, b, c;

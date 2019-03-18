@@ -182,13 +182,13 @@
                            </div>
                            <!-- End .price-box -->
                            <div class="product-action">
-                              <a href="tel:0394690908" class="paction add-wishlist" title="gọi ngay cho salem piano">
+                              <a href="tel:0394690998" class="paction add-wishlist" title="gọi ngay cho salem piano">
                               <span>Add to Wishlist</span>
                               </a>
                               <a href="{{ route('Pages.chitiet',['slug' => str_slug($item->tenSP),'id'=>$item->id]) }}" class="paction add-cart" title="Mua Sản Phẩm">
                               <span>Mua Sản Phẩm</span>
                               </a>
-                              <a href="tel:0394690908" class="paction add-compare" title="gọi ngay cho salem piano">
+                              <a href="tel:0394690998" class="paction add-compare" title="gọi ngay cho salem piano">
                               <span>Add to Compare</span>
                               </a>
                            </div>

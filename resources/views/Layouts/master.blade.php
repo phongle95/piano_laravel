@@ -53,7 +53,7 @@
                      </button>
                      <div class="header-contact">
                         <span>Gọi Cho Chúng tôi</span>
-                        <a href="tel:#"><strong style="color:#231f20">039 469 0908</strong></a>
+                        <a href="tel:#"><strong style="color:#231f20">039 469 0998</strong></a>
                      </div>
 
                   </div>
@@ -102,7 +102,7 @@
          <div class='quick-call-button'></div>
             <div class='call-now-button'>
             <div><p class='call-text'></p>
-            <a href='tel:0394690908' title='Gọi ngay' >
+            <a href='tel:0394690998' title='Gọi ngay' >
             <div class='quick-alo-ph-circle active'></div>
             <div class='quick-alo-ph-circle-fill active'></div>
             <div class='quick-alo-ph-img-circle shake'></div>
@@ -129,7 +129,7 @@
                               </li>
                               <li>
                                  <span class="contact-info-label">Phone:</span> <a href="tel:">
-                                 + 039 469 0908</a>
+                                 + 039 469 0998</a>
                               </li>
                               <li>
                                  <span class="contact-info-label">Email:</span> <a href="">salempiano@.com</a>
@@ -198,12 +198,9 @@
                                     <!-- End .col-sm-6 -->
                                     <div class="col-sm-6">
                                        <div class="social-icons">
-                                          <a href="#" class="social-icon" target="_blank"><i
-                                             class="icon-facebook"></i></a>
-                                          <a href="#" class="social-icon" target="_blank"><i
-                                             class="icon-twitter"></i></a>
-                                          <a href="#" class="social-icon" target="_blank"><i
-                                             class="icon-linkedin"></i></a>
+                                        <a href="https://www.facebook.com/rsxvk.wave" class="social-icon" target="_blank"><i class="icon-facebook"></i></a>
+                                        <a href="https://www.facebook.com/pianonhapkhaudanang/" class="social-icon" target="_blank"><i class="icon-twitter"></i></a>
+                                        <a href="https://www.facebook.com/pianonhapkhaudanang/" class="social-icon" target="_blank"><i class="icon-instagram"></i></a>
                                        </div>
                                        <!-- End .social-icons -->
                                     </div>
@@ -272,9 +269,9 @@
             </nav>
             <!-- End .mobile-nav -->
             <div class="social-icons">
-               <a href="#" class="social-icon" target="_blank"><i class="icon-facebook"></i></a>
-               <a href="#" class="social-icon" target="_blank"><i class="icon-twitter"></i></a>
-               <a href="#" class="social-icon" target="_blank"><i class="icon-instagram"></i></a>
+               <a href="https://www.facebook.com/rsxvk.wave" class="social-icon" target="_blank"><i class="icon-facebook"></i></a>
+               <a href="https://www.facebook.com/pianonhapkhaudanang/" class="social-icon" target="_blank"><i class="icon-twitter"></i></a>
+               <a href="https://www.facebook.com/pianonhapkhaudanang/" class="social-icon" target="_blank"><i class="icon-instagram"></i></a>
             </div>
             <!-- End .social-icons -->
          </div>
@@ -289,5 +286,7 @@
       <script src="assets/js/plugins.min.js"></script>
       <!-- Main JS File -->
       <script src="assets/js/main.min.js"></script>
+
+
    </body>
 </html>

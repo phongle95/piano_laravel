@@ -17,7 +17,7 @@
    <div class="col-md-12">
       <div class="card">
          <div class="card-header card-header-primary">
-            <h4 class="card-title ">SẢN PHẨM</h4>
+            <h3 style="text-align:center;font-weight: 600;">Sản phẩm</h3>
          </div>
          <div class="card-body">
             <div class="table-responsive">

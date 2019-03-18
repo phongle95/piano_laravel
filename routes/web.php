@@ -140,27 +140,92 @@ Route::group(['prefix' => 'admin'], function () {
     });
 
 
+    Route::group(['prefix' => 'menu'], function () {
+
+        Route::get('danh-sach', [
+            'uses' => 'KhachHangcontroller@getDanhSach',
+            'as' => 'PageAdmin.menu.danhsach'
+        ]);
 
 
+        Route::get('them', [
+            'uses' => 'KhachHangcontroller@getThem',
+            'as' => 'PageAdmin.menu.them'
+        ]);
 
-});
+        Route::post('them', [
+            'uses' => 'KhachHangcontroller@postThem',
+            'as' => 'PageAdmin.menu.them'
+        ]);
 
-
-
-
-
-Route::get('database', function() {
-    Schema::create('sanpham', function ($table) {
-        $table->increments('id');
-        $table->string('tenSP',100);
-        $table->integer('gia');
-        $table->string('img');
-        $table->string('tomTat');
-        $table->text('MTSP');
-        $table->text('TSKT');
-        $table->integer('maSP');
+        Route::get('sua/{id}', [
+            'uses' => 'KhachHangcontroller@getSua',
+            'as' => 'PageAdmin.menu.sua'
+        ]);
+        Route::post('sua/{id}', [
+            'uses' => 'KhachHangcontroller@postSua',
+            'as' => 'PageAdmin.menu.sua'
+        ]);
 
     });
-    echo "da tao xong";
+
+
+
+    Route::group(['prefix' => 'khach-hang'], function () {
+        Route::get('danh-sach', [
+            'uses' => 'KhachHangcontroller@getDanhSachKhach',
+            'as' => 'PageAdmin.khachhang.danhsach'
+        ]);
+
+        Route::get('them', [
+            'uses' => 'KhachHangcontroller@getThemKhach',
+            'as' => 'PageAdmin.khachhang.them'
+        ]);
+
+
+        Route::post('them', [
+            'uses' => 'KhachHangcontroller@postThemKhach',
+            'as' => 'PageAdmin.khachhang.them'
+        ]);
+
+        Route::get('sua-khach-hang/{id}', [
+            'uses' => 'KhachHangcontroller@getSuaKhach',
+            'as' => 'PageAdmin.khachhang.suakhachhang'
+        ]);
+
+        Route::post('sua-khach-hang/{id}', [
+            'uses' => 'KhachHangcontroller@postSuaKhach',
+            'as' => 'PageAdmin.khachhang.suakhachhang'
+        ]);
+
+
+        Route::get('xoa/{id}', [
+            'uses' => 'KhachHangcontroller@getXoa',
+            'as' => 'PageAdmin.khachhang.xoa'
+        ]);
+
+    });
+
+
+
+
+
 });
+
+
+
+
+
+// Route::get('database', function() {
+//     Schema::create('khachhang', function ($table) {
+//         $table->increments('id');
+//         $table->string('tenKH',100);
+//         $table->string('img',500);
+//         $table->string('diaChi',500);
+//         $table->string('danhGia',500);
+
+
+//     });
+//     echo "da tao xong";
+// });
 

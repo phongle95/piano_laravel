@@ -8,18 +8,19 @@
             <div class="col-lg-12">
                <div class="home-slider owl-carousel owl-carousel-lazy">
                   <div class="home-slide">
-                     <div class="owl-lazy slide-bg custom-slide"  data-src="https://vietthuong.vn/image/catalog/1a-Tuvan/khaitruongq4-1920x500.jpg"></div>
+                     <div class="owl-lazy slide-bg custom-slide"  data-src="/assets/images/xe.png"></div>
                      <div class="home-slide-content text-white">
-                        <h3>Giảm giá<span>10%</span> sản phẩm</h3>
-                        <h1>Summer Sale</h1>
-                        <p>Xem chi tiết tại salem piano</p>
+                        {{--  <h3>Giảm giá<span>10%</span> sản phẩm</h3>  --}}
+                        <br>
+                        <h1>Piano Center</h1>
+                        <p>Nhập khẩu trực tiếp tại nhật bản</p>
                         <a href="" class="btn btn-dark">Chi Tiết</a>
                      </div>
                      <!-- End .home-slide-content -->
                   </div>
                   <!-- End .home-slide -->
                   <div class="home-slide">
-                     <div class="owl-lazy slide-bg custom-slide"  data-src="https://vietthuong.vn/image/catalog/2-ShowroomVietthuong/roland-1920x500.jpg"></div>
+                     <div class="owl-lazy slide-bg custom-slide"  data-src="https://vietthuong.vn/image/catalog/1a-Tuvan/slide-vietthuong-thang-3-guitar.png"></div>
                      <div class="home-slide-content text-white">
                         <h3>Giảm giá<span>10%</span> sản phẩm</h3>
                         <h1>Summer Sale</h1>
