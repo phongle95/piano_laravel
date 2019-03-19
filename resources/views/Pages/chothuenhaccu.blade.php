@@ -2,7 +2,7 @@
 @section('noidung')
 <!-- End .header -->
 <main class="main">
-   <img src="https://vietthuong.vn//upload/images/slider/banner-tonghop.jpg" alt="salem piano">
+   <img src="assets/images/ct.png" alt="salem piano">
    <div class="container">
       <br><br>
       <div class="row">

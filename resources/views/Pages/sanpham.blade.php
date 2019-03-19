@@ -2,7 +2,7 @@
 @section('noidung')
 <!-- start nội dung tài -->
 <main class="main">
-   <img src="https://vietthuong.vn//upload/images/slider/slide.png" alt="salem piano">
+   <img src="assets/images/sanpham.png" alt="salem piano">
    <br>
    <div class="info-boxes-container">
       <div class="container">

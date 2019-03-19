@@ -61,10 +61,6 @@ Route::get('video-cua-salem-piano',['uses'=>'TrangChuController@video','as'=>'Pa
 
 
 
-//admin
-Route::get('admin', function () {
-    return view('PageAdmin.trangchu');
-});
 
 Route::get('danh-sach-san', [
     'uses' => 'sanphamcontroller@getDanhSachSanPham',
@@ -72,10 +68,40 @@ Route::get('danh-sach-san', [
 ]);
 
 
-Route::group(['prefix' => 'admin'], function () {
 
-    //san pham
-    Route::group(['prefix' => 'san-pham'], function() {
+Route::get('login', [
+    'uses' => 'Admincontroller@login',
+    'as' => 'PageAdmin.login.login'
+]);
+
+Route::post('login', [
+    'uses' => 'Admincontroller@postLogin',
+    'as' => 'PageAdmin.login.login'
+]);
+
+
+
+// Route::get('admin', [
+//     'uses' => 'Admincontroller@admin',
+//     'as' => 'PageAdmin.trangchu'
+// ]);
+
+Route::get('logout', [
+    'uses' => 'Admincontroller@logout',
+    'as' => 'PageAdmin.logout'
+]);
+
+
+
+Route::prefix('admin')->middleware('auth')->group(function () {
+
+        Route::get('', [
+            'uses' => 'Admincontroller@admin',
+            'as' => 'PageAdmin.trangchu'
+        ]);
+
+        //san pham
+        Route::group(['prefix' => 'san-pham'], function() {
         //san pham
         Route::get('danh-sach', [
             'uses' => 'sanphamcontroller@getDanhSach',

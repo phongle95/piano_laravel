@@ -40,17 +40,17 @@ class TrangChuController extends Controller
 
     public function suachua(){
         $menu = menu::find(3);
-        return view('Pages.giaoduc',['menu'=>$menu]);
+        return view('Pages.suachua',['menu'=>$menu]);
     }
 
     public function TCSK(){
         $menu = menu::find(4);
-        return view('Pages.giaoduc',['menu'=>$menu]);
+        return view('Pages.tochucsukien',['menu'=>$menu]);
     }
 
     public function CTNC(){
         $menu = menu::find(5);
-        return view('Pages.giaoduc',['menu'=>$menu]);
+        return view('Pages.chothuenhaccu',['menu'=>$menu]);
     }
 
     public function lienhe(){

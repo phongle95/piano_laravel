@@ -127,11 +127,18 @@
                      </a>
                   </li>
                   <li class="nav-item ">
-                     <a class="nav-link" href="https://www.google.com.vn">
-                        <i class="material-icons">language</i>
-                        <p>Google</p>
-                     </a>
-                  </li>
+                        <a class="nav-link" href="https://www.google.com.vn">
+                           <i class="material-icons">language</i>
+                           <p>Google</p>
+                        </a>
+                     </li>
+
+                     <li class="nav-item ">
+                            <a class="nav-link" href="{{ route('PageAdmin.logout') }}">
+                               <i class="material-icons">logout</i>
+                               <p>Đăng Xuất</p>
+                            </a>
+                     </li>
                </ul>
             </div>
          </div>
