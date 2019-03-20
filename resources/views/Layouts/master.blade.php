@@ -5,21 +5,34 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
-      <title>Salem Piano - Piano Ở Đà Nẵng - Dạy Đàn Piano Tại Đà Nẵng</title>
-      <meta name="keywords" content="salem piano , piano đà nẵng , music center ,piano center,dạy học đàn piano ở đà nẵng" />
-      <meta name="description" content='Piano center , Music center Chuyên mua Bán đàn piano và dạy học đàn piano ở đà nẵng' />
-      <!--meta facebook-->
-      <meta property="og:title" content="tên title" />
-      <meta property="og:description" content="miêu tả" />
-      <meta property="og:image" content= "url hình avatar" />
-      <!--meta google-->
-      <meta itemprop="name" content="tên title" />
-      <meta itemprop="description" content="miêu tả" />
-      <meta itemprop="image" content= "url hình avatar" />
-      <meta name="og:url" content="http://www.imdb.com/title/tt0117500/"/>
+      @yield('meta')
 
 
+    <!-- Structure data -->
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Việt Nam",
+                "addressRegion": "TP Đà Nẵng",
+                "streetAddress": "172 Châu Thị Vĩnh Tế -TP Đà Nẵng"
+            },
+            "description": "Cửa hàng piano tại đà nẵng, Dậy học piano tại đà nẵng, Piano nhập khẩu chất lượng ở đà nẵng",
+            "name": "Salem Piano",
+            "telephone": "039 469 0998"
+        }
+        </script>
+        <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "name": "Salem Piano",
+            "url": "https://salempiano.vn",
+            "sameAs": ["https://www.facebook.com/pianonhapkhaudanang/"]
+        }
+        </script>
 
 
 

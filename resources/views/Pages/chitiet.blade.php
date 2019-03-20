@@ -206,3 +206,18 @@
      </main><!-- End .main -->
 <!-- End .main -->
 @endsection
+
+@section('meta')
+    <title>Salem Piano - Piano Ở Đà Nẵng - Dạy Đàn Piano Tại Đà Nẵng</title>
+    <meta name="keywords" content="salem piano , piano đà nẵng , music center ,piano center,dạy học đàn piano ở đà nẵng" />
+    <meta name="description" content='Piano center , Music center Chuyên mua Bán đàn piano và dạy học đàn piano ở đà nẵng' />
+    <!--meta facebook-->
+    <meta property="og:title" content="tên title" />
+    <meta property="og:description" content="miêu tả" />
+    <meta property="og:image" content= "url hình avatar" />
+    <!--meta google-->
+    <meta itemprop="name" content="tên title" />
+    <meta itemprop="description" content="miêu tả" />
+    <meta itemprop="image" content= "url hình avatar" />
+    <meta name="og:url" content="http://www.imdb.com/title/tt0117500/"/>
+@endsection

@@ -62,6 +62,20 @@ Route::get('video-cua-salem-piano',['uses'=>'TrangChuController@video','as'=>'Pa
 
 
 
+
+
+
+
+
+
+Route::any('admin2', function () {
+    return view('Admin2.master');
+});
+
+
+
+
+
 Route::get('danh-sach-san', [
     'uses' => 'sanphamcontroller@getDanhSachSanPham',
     'as' => 'PageAdmin.sanpham'

@@ -1,4 +1,4 @@
-@extends('Admin1.master')
+@extends('Admin2.master')
 
 @section('noidung')
 
