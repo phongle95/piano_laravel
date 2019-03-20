@@ -134,7 +134,7 @@
                      </li>
 
                      <li class="nav-item ">
-                            <a class="nav-link" href="{{ route('PageAdmin.logout') }}">
+                            <a class="nav-link" href="">
                                <i class="material-icons">logout</i>
                                <p>Đăng Xuất</p>
                             </a>

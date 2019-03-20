@@ -4,10 +4,26 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <title>SALEM PIANO</title>
-      <meta name="keywords" content="HTML5 Template" />
-      <meta name="description" content="Porto - Bootstrap eCommerce Template">
-      <meta name="author" content="SW-THEMES">
+
+
+      <title>Salem Piano - Piano Ở Đà Nẵng - Dạy Đàn Piano Tại Đà Nẵng</title>
+      <meta name="keywords" content="salem piano , piano đà nẵng , music center ,piano center,dạy học đàn piano ở đà nẵng" />
+      <meta name="description" content='Piano center , Music center Chuyên mua Bán đàn piano và dạy học đàn piano ở đà nẵng' />
+      <!--meta facebook-->
+      <meta property="og:title" content="tên title" />
+      <meta property="og:description" content="miêu tả" />
+      <meta property="og:image" content= "url hình avatar" />
+      <!--meta google-->
+      <meta itemprop="name" content="tên title" />
+      <meta itemprop="description" content="miêu tả" />
+      <meta itemprop="image" content= "url hình avatar" />
+      <meta name="og:url" content="http://www.imdb.com/title/tt0117500/"/>
+
+
+
+
+
+
       <!-- Favicon -->
       <link rel="icon" type="image/x-icon" href="assets/images/logosalem.png">
       <!-- Plugins CSS File -->
@@ -289,6 +305,35 @@
       <script src="assets/js/plugins.min.js"></script>
       <!-- Main JS File -->
       <script src="assets/js/main.min.js"></script>
+
+
+
+      <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+       window.fbAsyncInit = function() {
+         FB.init({
+           xfbml            : true,
+           version          : 'v3.2'
+         });
+       };
+
+       (function(d, s, id) {
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) return;
+       js = d.createElement(s); js.id = id;
+       js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+       fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your customer chat code -->
+      <div class="fb-customerchat"
+       attribution=setup_tool
+       page_id="1799244350296091"
+       theme_color="#ffc300"
+       logged_in_greeting="Salem Piano xin chào bạn, chúng mình có thể giúp gì bạn ạ?"
+       logged_out_greeting="Salem Piano xin chào bạn, chúng mình có thể giúp gì bạn ạ?">
+      </div>
 
 
    </body>

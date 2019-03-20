@@ -41,7 +41,7 @@
 
                 <div class="col-lg-3 order-lg-first">
                     <div class="side-custom-menu">
-                        <h2>TOP Thưowng hiệu</h2>
+                        <h2>TOP Thương hiệu</h2>
 
                         <div class="side-menu-body">
                             <ul>
