@@ -66,7 +66,7 @@ $config['images'] = array(
 $config['backends'][] = array(
     'name'         => 'default',
     'adapter'      => 'local',
-    'baseUrl'      => 'http://127.0.0.1:8000/public/upload',
+    'baseUrl'      => 'https://salempiano.vn/public/upload',
     // http://127.0.0.1:8000/public/upload
     // https://salempiano.vn/public/upload
 //  'root'         => '', // Can be used to explicitly set the CKFinder user files directory.

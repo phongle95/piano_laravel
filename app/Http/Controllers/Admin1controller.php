@@ -87,6 +87,9 @@ class Admin1controller extends Controller
     public function postThem(sanphamrequest $request){
         $sanpham = new sanpham;
         $sanpham->tenSP = $request->tenSP;
+        $sanpham->title = $request->title;
+        $sanpham->description = $request->description;
+        $sanpham->keyword = $request->keyword;
         $sanpham->gia = $request->gia;
         $sanpham->tomTat = $request->tomTat;
         $sanpham->MTSP = $request->MTSP;
@@ -120,6 +123,9 @@ class Admin1controller extends Controller
     public function postSua(SPRequest $request,$id){
         $sanpham = sanpham::find($id);
         $sanpham->tenSP = $request->tenSP;
+        $sanpham->title = $request->title;
+        $sanpham->description = $request->description;
+        $sanpham->keyword = $request->keyword;
         $sanpham->gia = $request->gia;
         $sanpham->tomTat = $request->tomTat;
         $sanpham->MTSP = $request->MTSP;

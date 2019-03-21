@@ -36,6 +36,33 @@
 
                                     <div class="row form-group">
 
+                                        <div class="col-12 col-md-12">
+                                                <label class="badge badge-info">Tên Title Meta</label><br>
+                                                <input type="text" id="text-input" name="title" value="{{ old('title') }}" placeholder="Nhập tên title" class="form-control">
+                                            </div>
+
+                                    </div>
+
+                                    <div class="row form-group">
+
+                                        <div class="col-12 col-md-12">
+                                                <label class="badge badge-info">Description Meta</label><br>
+                                                <textarea  id="textarea-input" rows="5" placeholder="Nhập nội dung" class="form-control" name="description">{{ old('description') }}</textarea>
+                                            </div>
+
+                                </div>
+
+                                    <div class="row form-group">
+
+                                        <div class="col-12 col-md-12">
+                                                <label class="badge badge-info">Keyword Meta (SEO)</label><br>
+                                                <input type="text" id="text-input" name="keyword" value="{{ old('keyword') }}" placeholder="Nhập Keyword" class="form-control">
+                                            </div>
+
+                                </div>
+
+                                    <div class="row form-group">
+
                                             <div class="col-12 col-md-12">
 
                                                     <label class="badge badge-info">Giá Sản Phẩm</label><br>

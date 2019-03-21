@@ -26,12 +26,39 @@
 
                                     <div class="row form-group">
 
-                                            <div class="col-12 col-md-12">
-                                                    <label class="badge badge-info">Tên Sản Phẩm</label><br>
-                                                    <input type="text" id="text-input" name="tenSP" value="{{ $sanpham->tenSP }}" placeholder="Nhập tên sản phẩm" class="form-control">
-                                                </div>
+                                        <div class="col-12 col-md-12">
+                                                <label class="badge badge-info">Tên Sản Phẩm</label><br>
+                                                <input type="text" id="text-input" name="tenSP" value="{{ $sanpham->tenSP }}" placeholder="Nhập tên sản phẩm" class="form-control">
+                                            </div>
 
-                                    </div>
+                                </div>
+
+                                <div class="row form-group">
+
+                                    <div class="col-12 col-md-12">
+                                            <label class="badge badge-info">Tên Title Meta</label><br>
+                                            <input type="text" id="text-input" name="title" value="{{ $sanpham->title }}" placeholder="Nhập tên title" class="form-control">
+                                        </div>
+
+                                </div>
+
+                                <div class="row form-group">
+
+                                    <div class="col-12 col-md-12">
+                                            <label class="badge badge-info">Description Meta</label><br>
+                                            <textarea  id="textarea-input" rows="5" placeholder="Nhập nội dung" class="form-control" name="description">{{ $sanpham->description }}</textarea>
+                                        </div>
+
+                            </div>
+
+                                <div class="row form-group">
+
+                                    <div class="col-12 col-md-12">
+                                            <label class="badge badge-info">Keyword Meta (SEO)</label><br>
+                                            <input type="text" id="text-input" name="keyword" value="{{ $sanpham->keyword }}" placeholder="Nhập Keyword" class="form-control">
+                                        </div>
+
+                            </div>
 
                                     <div class="row form-group">
 

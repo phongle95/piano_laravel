@@ -208,16 +208,16 @@
 @endsection
 
 @section('meta')
-<title>Salem Piano Center - Bán Đàn Piano Ở Đà Nẵng -  Dạy Học Piano Tại Đà Nẵng</title>
-<meta name="keywords" content="salem piano , cửa hàng piano ở đà nẵng , piano đà nẵng , music center ,piano center ,dạy học đàn piano ở đà nẵng , sửa chữa piano tại đà nẵng ,tổ chức sự kiện tại đà nẵng" />
-<meta name="description" content='Piano center , Music center Chuyên mua Bán đàn piano được nhập khẩu từ nhật bản và dạy học đàn piano ở đà nẵng và các loại nhạc cụ' />
+    <title>{{$chitiet->title}}</title>
+<meta name="keywords" content="{{$chitiet->keyword}}" />
+<meta name="description" content='{{$chitiet->description}}' />
 <!--meta facebook-->
-<meta property="og:title" content="salem piano - piano center - music center bán đàn piano ở đà nẵng và dạy học đàn piano tại đà nẵng" />
-<meta property="og:description" content="Salem piano là trung tâm âm nhạc tại đà nẵng chuyên bán các loại đàn piano nhập khẩu từ nhật bản và đào tạo âm nhạc dạy học các loại nhạc cụ như đàn piano" />
-<meta property="og:image" content= "/upload/{{ $item->img }}" />
+<meta property="og:title" content="{{$chitiet->title}}" />
+<meta property="og:description" content="{{$chitiet->description}}" />
+<meta property="og:image" content= "/upload/{{ $chitiet->img }}" />
 <!--meta google-->
 <meta itemprop="name" content="Music center chuyên dạy học các loại nhạc cụ như piano guitar drum và bán các loại đàn piano nhập khẩu trực tiếp tại nhật bản" />
 <meta itemprop="description" content="Salem piano center chuyên cung cấp các loại đàn piano nhập khẩu tại nhật bản và Đào tạo âm nhạc Music center dạy học đàn piano và các loại nhạc cụ" />
-<meta itemprop="image" content= "/upload/{{ $item->img }}" />
-<meta name="og:url" content="{{ route('Pages.chitiet',['slug' => str_slug($item->tenSP),'id'=>$item->id]) }}"/>
+<meta itemprop="image" content= "/upload/{{ $chitiet->img }}" />
+<meta name="og:url" content="{{ route('Pages.chitiet',['slug' => str_slug($chitiet->tenSP),'id'=>$chitiet->id]) }}"/>
 @endsection

@@ -762,7 +762,7 @@ a:focus {
 	display: block;
 	position: relative;
 	padding: .6rem 4.4rem .4rem 1.2rem;
-	border: 1px solid #ffc107;
+	border: 1px solid #fd0;
 	border-radius: .2rem;
 	background-color: #231f20;
 	box-shadow: 0 7px 8px rgba(0, 0, 0, 0.05)
@@ -1893,7 +1893,7 @@ a:focus {
 	left: 0;
 	padding-top: 30px;
 	padding-bottom: 30px;
-    background-color: yellow;
+    background-color: #fd0;
     color: black;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 	z-index: 1040;
@@ -2017,7 +2017,7 @@ a:focus {
 	left: 1.5rem;
 	min-width: 13rem;
 	padding: 1rem;
-	background-color: #ffc107;
+	background-color: #fd0;
 	color: black;
 	font-family: 'Shadows Into Light', cursive;
 	font-size: 2.1rem;
@@ -2034,7 +2034,7 @@ a:focus {
 	width: 0;
 	height: 0;
 	border-top: 17px solid transparent;
-	border-right: 15px solid #ffc107;
+	border-right: 15px solid #fd0;
 	content: ''
 }
 
@@ -2151,7 +2151,7 @@ a:focus {
 	padding: 1.6rem 1.9rem;
 	border-radius: 0;
 	border-color:black;
-	background-color: #ffc107;
+	background-color: #fd0;
 	color: black;
 	font-family: "Open Sans", sans-serif;
 	font-size: 1.4rem;
@@ -2164,7 +2164,7 @@ a:focus {
 .widget-newsletter .btn:hover,
 .widget-newsletter .btn:focus {
 	border-color:black;
-	background-color: #ffc107;
+	background-color: #fd0;
 	color: black;
 }
 
@@ -4078,7 +4078,7 @@ label {
 
 .btn-primary {
 	border-color: #343a40;
-	background-color: #ffc107;
+	background-color: #fd0;
 	color: black;
 	box-shadow: none
 }
@@ -4086,7 +4086,7 @@ label {
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary.focus {
-	border-color: #ffc107;
+	border-color: #fd0;
 	background-color:black;
 	color: #fff;
 	box-shadow: none
@@ -5752,7 +5752,7 @@ a:focus {
 
 .side-custom-menu ul li a:hover,
 .side-custom-menu ul li a:focus {
-	background-color: #ffc107;
+	background-color: #fd0;
 	color: black;
 	text-decoration: none
 }

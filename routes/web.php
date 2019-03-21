@@ -28,7 +28,7 @@ Route::get('/', function () {
 Route::get('',['uses'=>'TrangChuController@trangchu','as'=>'Pages.trangchu'] );
 
 //chitiet
-Route::get('piano-gia-re-tai-da-nang-{slug}-{id}.html',['uses'=>'TrangChuController@chitiet','as'=>'Pages.chitiet'] );
+Route::get('Dan-{slug}-{id}-gia-re-tai-da-nang.html',['uses'=>'TrangChuController@chitiet','as'=>'Pages.chitiet'] );
 
 //san pham
 Route::get('san-pham-dan-piano-tai-da-nang-cua-salem-piano',['uses'=>'TrangChuController@sanpham','as'=>'Pages.sanpham'] );

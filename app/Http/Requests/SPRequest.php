@@ -25,6 +25,9 @@ class SPRequest extends FormRequest
     {
         return [
             'tenSP' => 'required',
+            'title' => 'required',
+            'description' => 'required',
+            'keyword' => 'required',
             'gia' => 'required',
             'tomTat' => 'required',
             'MTSP' => 'required',
@@ -36,6 +39,9 @@ class SPRequest extends FormRequest
     {
         return [
             'tenSP.required' => 'Tên sản phẩm không hợp lệ',
+            'title.required' => 'Title không hợp lệ',
+            'description.required' => 'description không hợp lệ',
+            'keyword.required' => 'keyword không hợp lệ',
             'gia.required' => 'Giá chưa hợp lệ',
             'tomTat.required' => 'Tóm tắt không hợp lệ',
             'MTSP.required' => 'Ban chua nhap mô tả sản phẩm',

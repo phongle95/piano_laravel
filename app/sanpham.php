@@ -11,7 +11,7 @@ class sanpham extends Model
     public $timestamps = false;
 
      protected $fillable = [
-        'tenSP','gia','img','tomTat','MTSP','TSKT','maSP',
+        'tenSP','title','description','keyword','gia','img','tomTat','MTSP','TSKT','maSP',
     ];
 
     public function LoaiSanPham()
