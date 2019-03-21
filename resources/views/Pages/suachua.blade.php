@@ -2,7 +2,7 @@
 @section('noidung')
 <!-- End .header -->
 <main class="main">
-   <img src="assets/images/sc.png" alt="salem piano">
+   <img src="assets/images/sc.jpg" alt="salem piano">
    <div class="container">
       <br><br>
       <div class="row">
@@ -27,16 +27,16 @@
 @endsection
 
 @section('meta')
-    <title>Salem Piano - Piano Ở Đà Nẵng - Dạy Đàn Piano Tại Đà Nẵng</title>
-    <meta name="keywords" content="salem piano , piano đà nẵng , music center ,piano center,dạy học đàn piano ở đà nẵng" />
-    <meta name="description" content='Piano center , Music center Chuyên mua Bán đàn piano và dạy học đàn piano ở đà nẵng' />
-    <!--meta facebook-->
-    <meta property="og:title" content="tên title" />
-    <meta property="og:description" content="miêu tả" />
-    <meta property="og:image" content= "url hình avatar" />
-    <!--meta google-->
-    <meta itemprop="name" content="tên title" />
-    <meta itemprop="description" content="miêu tả" />
-    <meta itemprop="image" content= "url hình avatar" />
-    <meta name="og:url" content="http://www.imdb.com/title/tt0117500/"/>
+<title>Salem Piano Nhận Sửa Chữa Piano Tại Dà Nẵng - Bán Đàn Piano Ở Đà Nẵng -  Dạy Học Piano Tại Đà Nẵng</title>
+<meta name="keywords" content="salem piano , cửa hàng piano ở đà nẵng , piano đà nẵng , music center ,piano center ,dạy học đàn piano ở đà nẵng , sửa chữa piano tại đà nẵng ,tổ chức sự kiện tại đà nẵng" />
+<meta name="description" content='Piano center , Music center Chuyên mua Bán đàn piano được nhập khẩu từ nhật bản và dạy học đàn piano ở đà nẵng và các loại nhạc cụ' />
+<!--meta facebook-->
+<meta property="og:title" content="salem piano - piano center - music center bán đàn piano ở đà nẵng và dạy học đàn piano tại đà nẵng" />
+<meta property="og:description" content="Salem piano là trung tâm âm nhạc tại đà nẵng chuyên bán các loại đàn piano nhập khẩu từ nhật bản và đào tạo âm nhạc dạy học các loại nhạc cụ như đàn piano" />
+<meta property="og:image" content= "assets/images/salem.jpg" />
+<!--meta google-->
+<meta itemprop="name" content="Music center chuyên dạy học các loại nhạc cụ như piano guitar drum và bán các loại đàn piano nhập khẩu trực tiếp tại nhật bản" />
+<meta itemprop="description" content="Salem piano center chuyên cung cấp các loại đàn piano nhập khẩu tại nhật bản và Đào tạo âm nhạc Music center dạy học đàn piano và các loại nhạc cụ" />
+<meta itemprop="image" content= "assets/images/GL_20.jpg" />
+<meta name="og:url" content="{{ route('Pages.suachua') }}"/>
 @endsection

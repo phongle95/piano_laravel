@@ -5,7 +5,6 @@
 <div class="row">
     <div class="col-md-12">
         <!-- DATA TABLE -->
-        <h3 class="title-5 m-b-35">Danh Sách Sản Phẩm</h3>
         <div class="table-data__tool">
             <div class="table-data__tool-left">
                     @if (session('thongbao'))
@@ -22,57 +21,61 @@
 
                     @endif
             </div>
-            <div class="table-data__tool-right">
-                <a href="{{ route('PageAdmin1.sanpham.them') }}" class="au-btn au-btn-icon au-btn--green au-btn--small">
-                    <i class="zmdi zmdi-plus"></i>Thêm Sản Phẩm</a>
+
+        </div>
 
 
+
+
+        <div class="row">
+                <div class="col-lg-12 grid-margin stretch-card">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Danh Sách Sản Phẩm</h4>
+                            <p class="card-description">
+                                <a href="{{ route('PageAdmin1.sanpham.them') }}" class="btn btn-inverse-info btn-fw">
+                                   Thêm Sản Phẩm</a>
+                            </p>
+                            <table class="table table-hover">
+                                    <thead>
+                                            <tr>
+                                                    <th>Tên Sản Phẩm</th>
+                                                    <th>Giá Sản Phẩm</th>
+                                                    <th>Hình sản phẩm</th>
+                                                    <th>Mã Loại Sản Phẩm</th>
+                                                    <th>Sửa</th>
+                                                    <th>Xóa</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                @foreach ($sanpham as $sp)
+                                                <tr>
+                                                        <td>{{ $sp->tenSP }}</td>
+                                                        <<td style="text-align:left;font-weight: 500;color:red">
+                                                                {{number_format($sp->gia) }}đ
+                                                        </td>
+                                                        <td>
+                                                                <img src="/upload/{{ $sp->img }}" ald="salem" width="300px" height="250px">
+                                                        </td>
+                                                        <td>{{ $sp->maSP }}</td>
+                                                        <td>
+                                                            <a href="{{ route('PageAdmin1.sanpham.sua',$sp->id) }}" class="btn btn-outline-success btn-fw"> Sửa</a>
+
+                                                        </td>
+                                                        <td>
+                                                            <a href="{{ route('PageAdmin1.sanpham.xoa',$sp->id) }}" class="btn btn-outline-danger btn-fw"> Xóa</a>
+                                                        </td>
+                                                </tr>
+                                                @endforeach
+
+                                        </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="table-responsive table-responsive-data2">
-            <table class="table table-data2">
-                <thead>
-                    <tr>
 
-                        <th>Tên Sản Phẩm</th>
-                        <th>Giá Sản Phẩm</th>
-                        <th>Hình sản phẩm</th>
-                        <th>Mã Loại Sản Phẩm</th>
-                        <th>Sửa</th>
-                        <th>Xóa</th>
-
-
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach ($sanpham as $sp)
-
-                    <tr class="tr-shadow">
-
-                        <td>{{ $sp->tenSP }}</td>
-                        <<td style="text-align:left;font-weight: 500;color:red">
-                                {{number_format($sp->gia) }}đ
-                        </td>
-                        <td>
-                                <img src="/upload/{{ $sp->img }}" ald="salem" width="300px" height="250px">
-                        </td>
-                        <td>{{ $sp->maSP }}</td>
-                        <td>
-                            <a href="{{ route('PageAdmin1.sanpham.sua',$sp->id) }}" class="btn btn-warning btn-sm"><i class="zmdi zmdi-edit"></i> Sửa</a>
-
-                        </td>
-                        <td>
-                            <a href="{{ route('PageAdmin1.sanpham.xoa',$sp->id) }}" class="btn btn-danger btn-sm"><i class="zmdi zmdi-delete"></i> Xóa</a>
-                        </td>
-
-                    </tr>
-                    <tr class="spacer"></tr>
-                    @endforeach
-
-                </tbody>
-            </table>
-        </div>
-        <!-- END DATA TABLE -->
     </div>
 </div>
 

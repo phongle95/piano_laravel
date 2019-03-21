@@ -19,7 +19,7 @@
                                     <div class="row form-group">
 
                                             <div class="col-12 col-md-12">
-                                                    <span class="badge badge-warning">Tên Menu</span><br>
+                                                    <label class="badge badge-info">Tên Menu</label><br>
                                                     <input type="text" id="text-input" name="tenMenu" value="{{ $menu->tenMenu }}" placeholder="Nhập tên Menu" class="form-control">
                                                 </div>
 
@@ -29,7 +29,7 @@
                                     <div class="row form-group">
 
                                             <div class="col-12 col-md-12">
-                                                    <span class="badge badge-warning">Nội Dung</span><br>
+                                                    <label class="badge badge-info">Nội Dung</label><br>
                                                     <textarea  id="editor3" rows="5" placeholder="Nhập nội dung" class="form-control" name="noiDung">{{ $menu->noiDung }}</textarea>
                                                 </div>
 
@@ -38,11 +38,11 @@
 
 
                                <div class="card-footer">
-                                    <button type="submit" class="btn btn-primary btn-sm">
-                                        <i class="fa fa-plus-square"></i> Sửa
+                                    <button type="submit" class="btn btn-dark btn-fw">
+                                        Sửa
                                     </button>
-                                    <a href="{{ route('PageAdmin1.menu.danhsach') }}" type="reset" class="btn btn-danger btn-sm">
-                                        <i class="fa fa-reply-all"></i> Quay về
+                                    <a href="{{ route('PageAdmin1.menu.danhsach') }}" class="btn btn-info btn-fw">
+                                       Quay về
                                     </a>
                                 </div>
                         </form>

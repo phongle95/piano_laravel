@@ -8,7 +8,7 @@
                 <div class="col-lg-9">
                     <div class="home-slider owl-carousel owl-carousel-lazy">
                         <div class="home-slide">
-                            <div class="owl-lazy slide-bg" data-src="assets/images/container.png"></div>
+                            <div class="owl-lazy slide-bg" data-src="assets/images/container.jpg"></div>
                             <div class="home-slide-content text-white">
                                 <br>
                                 <h1>Piano Center</h1>
@@ -18,7 +18,7 @@
                         </div><!-- End .home-slide -->
 
                         <div class="home-slide">
-                            <div class="owl-lazy slide-bg" data-src="assets/images/musiccenter.png"></div>
+                            <div class="owl-lazy slide-bg" data-src="assets/images/musiccenter.jpg"></div>
                             <div class="home-slide-content text-white">
                                     <br>
                                     <h1>Music Center</h1>
@@ -28,7 +28,7 @@
                         </div><!-- End .home-slide -->
 
                         <div class="home-slide">
-                            <div class="owl-lazy slide-bg" data-src="assets/images/tcsk&ctnc.png"></div>
+                            <div class="owl-lazy slide-bg" data-src="assets/images/tcsk_ctnc.jpg"></div>
                             <div class="home-slide-content text-white">
                                     <br>
                                     <h1>Trung tâm tổ chức sự kiện</h1>
@@ -215,7 +215,7 @@
             <div class="product">
                 <figure class="product-image-container">
                    <a href="{{ route('Pages.giaoduc') }}" class="product-image">
-                   <img class="custom-image-product"  src="assets/images/daynhac.png" alt="salem piano">
+                   <img class="custom-image-product"  src="assets/images/daynhac.jpg" alt="salem piano">
                    </a>
                 </figure>
                 <div class="product-details">
@@ -248,7 +248,7 @@
              <div class="product">
                 <figure class="product-image-container">
                    <a href="{{ route('Pages.suachua') }}" class="product-image">
-                   <img class="custom-image-product"  src="assets/images/suachua.png" alt="salem piano">
+                   <img class="custom-image-product"  src="assets/images/suachua.jpg" alt="salem piano">
                    </a>
                 </figure>
                 <div class="product-details">
@@ -280,7 +280,7 @@
              <div class="product">
                 <figure class="product-image-container">
                    <a href="{{ route('Pages.tochucsukien') }}" class="product-image">
-                   <img class="custom-image-product"  src="assets/images/tcsk.png" alt="salem piano">
+                   <img class="custom-image-product"  src="assets/images/tcsk.jpg" alt="salem piano">
                    </a>
                 </figure>
                 <div class="product-details">
@@ -312,7 +312,7 @@
              <div class="product">
                 <figure class="product-image-container">
                    <a href="{{ route('Pages.chothuenhaccu') }}" class="product-image">
-                   <img class="custom-image-product"  src="assets/images/chothue.png" alt="salem piano">
+                   <img class="custom-image-product"  src="assets/images/chothue.jpg" alt="salem piano">
                    </a>
                 </figure>
                 <div class="product-details">
@@ -396,16 +396,16 @@
 
 
 @section('meta')
-    <title>Salem Piano - Piano Ở Đà Nẵng - Dạy Đàn Piano Tại Đà Nẵng</title>
-    <meta name="keywords" content="salem piano , piano đà nẵng , music center ,piano center,dạy học đàn piano ở đà nẵng" />
+    <title>Salem Piano Center - Piano Ở Đà Nẵng - Music Center Dạy Đàn Piano Tại Đà Nẵng</title>
+    <meta name="keywords" content="salem piano , cửa hàng piano ở đà nẵng , piano đà nẵng , music center ,piano center ,dạy học đàn piano ở đà nẵng , sửa chữa piano tại đà nẵng ,tổ chức sự kiện tại đà nẵng" />
     <meta name="description" content='Piano center , Music center Chuyên mua Bán đàn piano và dạy học đàn piano ở đà nẵng' />
     <!--meta facebook-->
-    <meta property="og:title" content="tên title" />
-    <meta property="og:description" content="miêu tả" />
-    <meta property="og:image" content= "url hình avatar" />
+    <meta property="og:title" content="salem piano - piano center - music center bán đàn piano ở đà nẵng và dạy học đàn piano tại đà nẵng" />
+    <meta property="og:description" content="Salem piano là trung tâm âm nhạc tại đà nẵng chuyên bán các loại đàn piano nhập khẩu từ nhật bản và đào tạo âm nhạc dạy học các loại nhạc cụ như đàn piano" />
+    <meta property="og:image" content= "assets/images/salem.jpg" />
     <!--meta google-->
-    <meta itemprop="name" content="tên title" />
-    <meta itemprop="description" content="miêu tả" />
-    <meta itemprop="image" content= "url hình avatar" />
-    <meta name="og:url" content="http://www.imdb.com/title/tt0117500/"/>
+    <meta itemprop="name" content="Music center chuyên dạy học các loại nhạc cụ như piano guitar drum và bán các loại đàn piano nhập khẩu trực tiếp tại nhật bản" />
+    <meta itemprop="description" content="Salem piano center chuyên cung cấp các loại đàn piano nhập khẩu tại nhật bản và Đào tạo âm nhạc Music center dạy học đàn piano và các loại nhạc cụ" />
+    <meta itemprop="image" content= "assets/images/GL_20.jpg" />
+    <meta name="og:url" content="{{ route('Pages.trangchu') }}"/>
 @endsection

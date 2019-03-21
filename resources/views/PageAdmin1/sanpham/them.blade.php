@@ -27,7 +27,8 @@
                                     <div class="row form-group">
 
                                             <div class="col-12 col-md-12">
-                                                    <span class="badge badge-warning">Tên Sản Phẩm</span><br>
+
+                                                    <label class="badge badge-info">Tên Sản Phẩm</label><br><br>
                                                     <input type="text" id="text-input" name="tenSP" value="{{ old('tenSP') }}" placeholder="Nhập tên sản phẩm" class="form-control">
                                                 </div>
 
@@ -36,7 +37,8 @@
                                     <div class="row form-group">
 
                                             <div class="col-12 col-md-12">
-                                                    <span class="badge badge-warning">Giá Sản Phẩm</span><br>
+
+                                                    <label class="badge badge-info">Giá Sản Phẩm</label><br>
                                                     <input type="number" id="text-input" placeholder="Nhập giá sản phẩm" name="gia" value="{{ old('gia') }}" class="form-control">
                                                 </div>
 
@@ -47,8 +49,9 @@
                                     <div class="row form-group">
 
                                             <div class="col-12 col-md-12">
-                                                    <span class="badge badge-warning">Chọn Hình</span><br>
+                                                    <label class="badge badge-info">Chọn Hình</label><br><br>
                                                     <input type="file" style="width:200px" name="img" value="{{ old('img') }}">
+
                                             </div>
 
                                     </div>
@@ -56,7 +59,7 @@
                                     <div class="row form-group">
 
                                             <div class="col-12 col-md-12">
-                                                    <span class="badge badge-warning">Tóm Tắt</span><br>
+                                                    <label class="badge badge-info">Tóm Tắt</label><br>
                                                     <textarea  id="textarea-input" rows="5" placeholder="Nhập nội dung" class="form-control" name="tomTat">{{ old('tomTat') }}</textarea>
                                                 </div>
 
@@ -65,7 +68,7 @@
                                     <div class="row form-group">
 
                                             <div class="col-12 col-md-12">
-                                                    <span class="badge badge-warning">Mô Tả Sản Phẩm</span><br>
+                                                    <label class="badge badge-info">Mô Tả Sản Phẩm</label><br>
                                                     <textarea  id="editor1" rows="5" placeholder="Nhập nội dung" class="form-control" name="MTSP">{{ old('MTSP') }}</textarea>
                                              </div>
 
@@ -73,7 +76,7 @@
                                     <div class="row form-group">
 
                                             <div class="col-12 col-md-12">
-                                                    <span class="badge badge-warning">Thông Số Kĩ Thuật</span><br>
+                                                    <label class="badge badge-info">Thông Số Kĩ Thuật</label><br>
                                                     <textarea  id="editor2" rows="5" placeholder="Nhập nội dung" class="form-control" name="TSKT">{{ old('TSKT') }}</textarea>
                                                 </div>
 
@@ -82,7 +85,7 @@
                                     <div class="row form-group">
 
                                             <div class="col-12 col-md-12">
-                                                    <span class="badge badge-warning">Mã Sản Phẩm</span><br>
+                                                    <label class="badge badge-info">Mã Sản Phẩm</label><br>
                                                     <select name="maSP" class="form-control">
                                                             @foreach ($loaisanpham as $lsp)
                                                             <option value="{{ $lsp->maSP }}">{{ $lsp->tenSP }}</option>
@@ -93,11 +96,11 @@
                                     </div>
 
                                <div class="card-footer">
-                                    <button type="submit" class="btn btn-primary btn-sm">
-                                        <i class="fa fa-plus-square"></i> Thêm
+                                    <button type="submit" class="btn btn-success btn-fw">
+                                         Thêm
                                     </button>
-                                    <a href="{{ route('PageAdmin1.sanpham.danhsach') }}" type="reset" class="btn btn-danger btn-sm">
-                                        <i class="fa fa-reply-all"></i> Quay về
+                                    <a href="{{ route('PageAdmin1.sanpham.danhsach') }}" class="btn btn-info btn-fw">
+                                        Quay về
                                     </a>
                                 </div>
                         </form>

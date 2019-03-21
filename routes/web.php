@@ -68,9 +68,9 @@ Route::get('video-cua-salem-piano',['uses'=>'TrangChuController@video','as'=>'Pa
 
 
 
-Route::any('admin2', function () {
-    return view('Admin2.master');
-});
+// Route::any('admin2', function () {
+//     return view('Admin2.master');
+// });
 
 
 
@@ -95,10 +95,10 @@ Route::post('login', [
 
 
 
-Route::get('admin', [
-    'uses' => 'Admin1controller@admin',
-    'as' => 'PageAdmin1.trangchu'
-]);
+// Route::get('admin', [
+//     'uses' => 'Admin1controller@admin',
+//     'as' => 'PageAdmin1.trangchu'
+// ]);
 
 Route::get('logout', [
     'uses' => 'Admin1controller@logout',
@@ -117,7 +117,7 @@ Route::get('logout', [
 
 
 
-Route::prefix('admin1')->middleware('auth')->group(function () {
+Route::prefix('salem-admin')->middleware('auth')->group(function () {
     Route::get('', [
         'uses' => 'Admin1controller@admin',
         'as' => 'PageAdmin1.trangchu'
@@ -278,164 +278,6 @@ Route::prefix('admin1')->middleware('auth')->group(function () {
 
 
 
-
-
-
-// Route::prefix('admin')->middleware('auth')->group(function () {
-
-//         Route::get('', [
-//             'uses' => 'Admincontroller@admin',
-//             'as' => 'PageAdmin.trangchu'
-//         ]);
-
-//         //san pham
-//         Route::group(['prefix' => 'san-pham'], function() {
-//         //san pham
-//         Route::get('danh-sach', [
-//             'uses' => 'sanphamcontroller@getDanhSach',
-//             'as' => 'PageAdmin.sanpham.danhsach'
-//         ]);
-
-//         //them san pham
-//         Route::get('them', [
-//             'uses' => 'sanphamcontroller@getThem',
-//             'as' => 'PageAdmin.sanpham.them'
-//         ]);
-
-//         Route::post('them', [
-//             'uses' => 'sanphamcontroller@postThem',
-//             'as' => 'PageAdmin.sanpham.them'
-//         ]);
-
-//         Route::get('sua/{id}', [
-//             'uses' => 'sanphamcontroller@getSua',
-//             'as' => 'PageAdmin.sanpham.sua'
-//         ]);
-
-//         Route::post('sua/{id}', [
-//             'uses' => 'sanphamcontroller@postSua',
-//             'as' => 'PageAdmin.sanpham.sua'
-//         ]);
-
-//         Route::get('xoa/{id}', [
-//             'uses' => 'sanphamcontroller@getxoaSP',
-//             'as' => 'PageAdmin.sanpham.xoa'
-//         ]);
-
-
-
-
-//     });
-
-//     //danh sach loai san pham
-//     Route::group(['prefix' => 'loai-san-pham'], function() {
-
-//         Route::get('danh-sach', [
-//             'uses' => 'sanphamcontroller@getDanhSachLoai',
-//             'as' => 'PageAdmin.loaisanpham.danhsach'
-//         ]);
-
-//         Route::get('them', [
-//             'uses' => 'sanphamcontroller@getThemLoai',
-//             'as' => 'PageAdmin.loaisanpham.them'
-//         ]);
-
-//         Route::post('them', [
-//             'uses' => 'sanphamcontroller@postThemLoai',
-//             'as' => 'PageAdmin.loaisanpham.them'
-//         ]);
-
-//         Route::get('sua/{id}', [
-//             'as' => 'PageAdmin.loaisanpham.sua',
-//             'uses' => 'sanphamcontroller@getSuaLoai'
-
-//         ]);
-
-//         Route::post('sua/{id}', [
-//             'as' => 'PageAdmin.loaisanpham.sua',
-//             'uses' => 'sanphamcontroller@postSuaLoai'
-
-//         ]);
-
-//         Route::get('xoa/{id}', [
-//             'uses' => 'sanphamcontroller@getXoa',
-//             'as' => 'PageAdmin.loaisanpham.xoa'
-//         ]);
-
-//     });
-
-
-//     Route::group(['prefix' => 'menu'], function () {
-
-//         Route::get('danh-sach', [
-//             'uses' => 'KhachHangcontroller@getDanhSach',
-//             'as' => 'PageAdmin.menu.danhsach'
-//         ]);
-
-
-//         Route::get('them', [
-//             'uses' => 'KhachHangcontroller@getThem',
-//             'as' => 'PageAdmin.menu.them'
-//         ]);
-
-//         Route::post('them', [
-//             'uses' => 'KhachHangcontroller@postThem',
-//             'as' => 'PageAdmin.menu.them'
-//         ]);
-
-//         Route::get('sua/{id}', [
-//             'uses' => 'KhachHangcontroller@getSua',
-//             'as' => 'PageAdmin.menu.sua'
-//         ]);
-//         Route::post('sua/{id}', [
-//             'uses' => 'KhachHangcontroller@postSua',
-//             'as' => 'PageAdmin.menu.sua'
-//         ]);
-
-//     });
-
-
-
-//     Route::group(['prefix' => 'khach-hang'], function () {
-//         Route::get('danh-sach', [
-//             'uses' => 'KhachHangcontroller@getDanhSachKhach',
-//             'as' => 'PageAdmin.khachhang.danhsach'
-//         ]);
-
-//         Route::get('them', [
-//             'uses' => 'KhachHangcontroller@getThemKhach',
-//             'as' => 'PageAdmin.khachhang.them'
-//         ]);
-
-
-//         Route::post('them', [
-//             'uses' => 'KhachHangcontroller@postThemKhach',
-//             'as' => 'PageAdmin.khachhang.them'
-//         ]);
-
-//         Route::get('sua-khach-hang/{id}', [
-//             'uses' => 'KhachHangcontroller@getSuaKhach',
-//             'as' => 'PageAdmin.khachhang.suakhachhang'
-//         ]);
-
-//         Route::post('sua-khach-hang/{id}', [
-//             'uses' => 'KhachHangcontroller@postSuaKhach',
-//             'as' => 'PageAdmin.khachhang.suakhachhang'
-//         ]);
-
-
-//         Route::get('xoa/{id}', [
-//             'uses' => 'KhachHangcontroller@getXoa',
-//             'as' => 'PageAdmin.khachhang.xoa'
-//         ]);
-
-//     });
-
-
-
-
-
-// });
 
 
 

@@ -43,7 +43,7 @@
                         <td>{{ $mn->tenMenu }}</td>
 
                         <td>
-                            <a href="{{ route('PageAdmin1.menu.sua',$mn->id) }}" class="btn btn-warning btn-sm"><i class="zmdi zmdi-edit"></i> Sửa</a>
+                            <a href="{{ route('PageAdmin1.menu.sua',$mn->id) }}" class="btn btn-outline-success btn-fw"> Sửa</a>
 
                         </td>
 

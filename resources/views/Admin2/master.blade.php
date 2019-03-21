@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Purple Admin</title>
+  <title>Admin Salem Piano</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="/admin/vendors/iconfonts/mdi/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="/admin/vendors/css/vendor.bundle.base.css">
@@ -13,15 +13,14 @@
   <!-- inject:css -->
   <link rel="stylesheet" href="/admin/css/style.css">
   <!-- endinject -->
-  <link rel="shortcut icon" href="/admin/images/favicon.png" />
+  <link rel="shortcut icon" href="/admin/images/logo.png" />
 </head>
 <body>
   <div class="container-scroller">
     <!-- partial:partials/_navbar.html -->
     <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-        <a class="navbar-brand brand-logo" href="index.html"><img src="/admin/images/logo.svg" alt="logo"/></a>
-        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="/admin/images/logo-mini.svg" alt="logo"/></a>
+        <a class="navbar-brand brand-logo" href="index.html"><img src="/admin/images/logo.png" alt="logo"/></a>
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-stretch">
         <div class="search-field d-none d-md-block">
@@ -91,32 +90,32 @@
           <li class="nav-item">
             <a class="nav-link" href="{{ route('PageAdmin1.loaisanpham.danhsach') }}">
               <span class="menu-title">Loại Sản Phẩm</span>
-              <i class="mdi mdi-home menu-icon"></i>
+              <i class="mdi mdi-audiobook menu-icon"></i>
             </a>
           </li>
 
           <li class="nav-item">
             <a class="nav-link" href="{{ route('PageAdmin1.sanpham.danhsach') }}">
               <span class="menu-title">Sản Phẩm</span>
-              <i class="mdi mdi-contacts menu-icon"></i>
+              <i class="mdi mdi-library-music menu-icon"></i>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{ route('PageAdmin1.menu.danhsach') }}">
               <span class="menu-title">Menu</span>
-              <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+              <i class="mdi mdi-menu menu-icon"></i>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{ route('PageAdmin1.khachhang.danhsach') }}">
               <span class="menu-title">Đánh Giá</span>
-              <i class="mdi mdi-chart-bar menu-icon"></i>
+              <i class="mdi mdi-message-text-outline menu-icon"></i>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{ route('PageAdmin1.logout') }}">
               <span class="menu-title">Đăng Xuất</span>
-              <i class="mdi mdi-table-large menu-icon"></i>
+              <i class="mdi mdi-logout menu-icon"></i>
             </a>
           </li>
 

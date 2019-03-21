@@ -27,7 +27,7 @@
                                     <div class="row form-group">
 
                                             <div class="col-12 col-md-12">
-                                                    <span class="badge badge-warning">Tên Khách Hàng</span><br>
+                                                    <label class="badge badge-info">Tên Khách Hàng</label><br>
                                                     <input type="text" id="text-input" name="tenKH" value="{{ $khachhang->tenKH }}" placeholder="Nhập tên khách hàng" class="form-control">
                                                 </div>
 
@@ -38,12 +38,12 @@
                                     <div class="row form-group">
 
                                             <div class="col-12 col-md-4">
-                                                    <span class="badge badge-warning">Chọn Hình</span><br>
+                                                    <label class="badge badge-info">Chọn Hình</label><br><br>
                                                     <input type="file" style="width:200px" name="img" value="{{ old('img') }}">
                                             </div>
 
                                             <div class="col-12 col-md-8">
-                                                    <span class="badge badge-warning">Hình Củ</span><br>
+                                                    <label class="badge badge-info">Hình Củ</label><br>
                                                     <img src="/upload/{{ $khachhang->img }}" width="200px" height="150px" alt="salem">
                                             </div>
 
@@ -51,7 +51,7 @@
                                     <div class="row form-group">
 
                                             <div class="col-12 col-md-12">
-                                                    <span class="badge badge-warning">Địa Chỉ</span><br>
+                                                    <label class="badge badge-info">Địa Chỉ</label><br>
                                                     <input type="text" id="text-input" placeholder="Nhập địa chỉ" name="diaChi" value="{{ $khachhang->diaChi }}" class="form-control">
                                                 </div>
 
@@ -60,7 +60,7 @@
                                     <div class="row form-group">
 
                                             <div class="col-12 col-md-12">
-                                                    <span class="badge badge-warning">Đánh Giá</span><br>
+                                                    <label class="badge badge-info">Đánh Giá</label><br>
                                                     <textarea  id="textarea-input" rows="5" placeholder="Nhập nội dung" class="form-control" name="danhGia">{{ $khachhang->danhGia }}</textarea>
                                                 </div>
 
@@ -70,11 +70,11 @@
 
 
                                <div class="card-footer">
-                                    <button type="submit" class="btn btn-primary btn-sm">
-                                        <i class="fa fa-plus-square"></i> Sửa
+                                    <button type="submit" class="btn btn-dark btn-fw">
+                                        Sửa
                                     </button>
-                                    <a href="{{ route('PageAdmin1.khachhang.danhsach') }}" type="reset" class="btn btn-danger btn-sm">
-                                        <i class="fa fa-reply-all"></i> Quay về
+                                    <a href="{{ route('PageAdmin1.khachhang.danhsach') }}"  class="btn btn-info btn-fw">
+                                       Quay về
                                     </a>
                                 </div>
                         </form>

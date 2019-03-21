@@ -18,18 +18,18 @@
                             <div class="row form-group">
 
                                 <div class="col-12 col-md-12">
-                                    <span class="badge badge-warning">Tên Sản Phẩm</span><br>
+                                        <label class="badge badge-info">Tên Sản Phẩm</label><br>
                                     <input type="text" id="text-input" name="tenSP" value="{{ old('tenSP') }}" placeholder="Nhập tên sản phẩm" class="form-control">
                                 </div>
                             </div>
 
                             <div class="card-footer">
-                                    <button type="submit" class="btn btn-primary btn-sm">
-                                        <i class="fa fa-plus-square"></i> Thêm
+                                    <button type="submit" class="btn btn-success btn-fw">
+                                        Thêm
                                     </button>
-                                    <a href="{{ route('PageAdmin1.loaisanpham.danhsach') }}" type="reset" class="btn btn-danger btn-sm">
-                                        <i class="fa fa-reply-all"></i> Quay về
-                                    </a>
+                                    <a href="{{ route('PageAdmin1.loaisanpham.danhsach') }}" class="btn btn-info btn-fw">
+                                            Quay về
+                                         </a>
                                 </div>
                         </form>
                     </div>

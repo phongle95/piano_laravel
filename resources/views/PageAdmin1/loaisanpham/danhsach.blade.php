@@ -25,8 +25,8 @@
                     <div class="card-body">
                         <h4 class="card-title">Danh Sách Loại Sản Phẩm</h4>
                         <p class="card-description">
-                            <a href="{{ route('PageAdmin1.loaisanpham.them') }}" class="au-btn au-btn-icon au-btn--green au-btn--small">
-                                <i class="zmdi zmdi-plus"></i>Thêm Loại Sản Phẩm</a>
+                            <a href="{{ route('PageAdmin1.loaisanpham.them') }}" class="btn btn-inverse-info btn-fw">
+                                Thêm Loại Sản Phẩm</a>
                         </p>
                         <table class="table table-hover">
                             <thead>
@@ -48,11 +48,11 @@
                                     <td>{{ $lsp->tenSP }}</td>
 
                                     <td>
-                                        <a href="{{ route('PageAdmin1.loaisanpham.sua',$lsp->maSP) }}" class="btn btn-warning btn-sm"><i class="zmdi zmdi-edit"></i> Sửa</a>
 
+                                        <a href="{{ route('PageAdmin1.loaisanpham.sua',$lsp->maSP) }}" class="btn btn-outline-success btn-fw"> Sửa</a>
                                     </td>
                                     <td>
-                                        <a href="{{ route('PageAdmin1.loaisanpham.xoa',$lsp->maSP) }}" class="btn btn-danger btn-sm"><i class="zmdi zmdi-delete"></i> Xóa</a>
+                                        <a href="{{ route('PageAdmin1.loaisanpham.xoa',$lsp->maSP) }}" class="btn btn-outline-danger btn-fw"> Xóa</a>
                                     </td>
 
                                 </tr>

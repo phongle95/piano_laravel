@@ -2,13 +2,13 @@
 @section('noidung')
 <!-- End .header -->
 <main class="main">
-   <img src="https://vietthuong.vn/image/catalog/1a-Tuvan/piano-dien.jpg" alt="salem piano">
+   <img src="assets/images/video.jpg" alt="salem piano">
    <div class="container">
       <br><br>
       <div class="row">
          <div class="col-lg-8">
             <h3 class="text-center font-weight-bold">KHO ẢNH CỦA SALEM PIANO</h3>
-            <iframe src='https://www.sociablekit.com/app/embed/index.php?embed_id=21496' frameborder='0' width='100%' height='1000'></iframe>
+            <div class='embedsocial-album' data-ref="4c741c44af01313b52a22da0845f05ce77b32e46"></div><script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/embedscript/ei.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialScript"));</script>
          </div>
          <div class="col-lg-4">
             <h2> <span class="badge badge-primary">Fanpage Facebook</span></h2>
@@ -30,16 +30,16 @@
 
 
 @section('meta')
-    <title>Salem Piano - Piano Ở Đà Nẵng - Dạy Đàn Piano Tại Đà Nẵng</title>
-    <meta name="keywords" content="salem piano , piano đà nẵng , music center ,piano center,dạy học đàn piano ở đà nẵng" />
-    <meta name="description" content='Piano center , Music center Chuyên mua Bán đàn piano và dạy học đàn piano ở đà nẵng' />
-    <!--meta facebook-->
-    <meta property="og:title" content="tên title" />
-    <meta property="og:description" content="miêu tả" />
-    <meta property="og:image" content= "url hình avatar" />
-    <!--meta google-->
-    <meta itemprop="name" content="tên title" />
-    <meta itemprop="description" content="miêu tả" />
-    <meta itemprop="image" content= "url hình avatar" />
-    <meta name="og:url" content="http://www.imdb.com/title/tt0117500/"/>
+<title>Salem Piano Center - Bán Đàn Piano Ở Đà Nẵng -  Dạy Học Piano Tại Đà Nẵng</title>
+<meta name="keywords" content="salem piano , cửa hàng piano ở đà nẵng , piano đà nẵng , music center ,piano center ,dạy học đàn piano ở đà nẵng , sửa chữa piano tại đà nẵng ,tổ chức sự kiện tại đà nẵng" />
+<meta name="description" content='Piano center , Music center Chuyên mua Bán đàn piano được nhập khẩu từ nhật bản và dạy học đàn piano ở đà nẵng và các loại nhạc cụ' />
+<!--meta facebook-->
+<meta property="og:title" content="salem piano - piano center - music center bán đàn piano ở đà nẵng và dạy học đàn piano tại đà nẵng" />
+<meta property="og:description" content="Salem piano là trung tâm âm nhạc tại đà nẵng chuyên bán các loại đàn piano nhập khẩu từ nhật bản và đào tạo âm nhạc dạy học các loại nhạc cụ như đàn piano" />
+<meta property="og:image" content= "assets/images/GL_20.jpg" />
+<!--meta google-->
+<meta itemprop="name" content="Music center chuyên dạy học các loại nhạc cụ như piano guitar drum và bán các loại đàn piano nhập khẩu trực tiếp tại nhật bản" />
+<meta itemprop="description" content="Salem piano center chuyên cung cấp các loại đàn piano nhập khẩu tại nhật bản và Đào tạo âm nhạc Music center dạy học đàn piano và các loại nhạc cụ" />
+<meta itemprop="image" content= "assets/images/gita.jpg" />
+<meta name="og:url" content="{{ route('Pages.video') }}"/>
 @endsection
