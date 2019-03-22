@@ -16,7 +16,7 @@
     <div class="container">
         <div class="row">
 
-            <div class="col-lg-8">
+            <div class="col-lg-9">
                 @foreach ($ketqua as $kq)
 
                 <div class="row">
@@ -49,7 +49,7 @@
             </div>
             <!-- End .col-lg-8 -->
 
-            <div class="col-lg-4">
+            <div class="col-lg-3">
                 @include('Layouts.facebook'); {{--
                 <h2> <span class="badge badge-primary">Fanpage Facebook</span></h2>
                 <br>

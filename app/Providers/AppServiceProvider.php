@@ -24,8 +24,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $piano = sanpham::where('maSP',1)->with('LoaiSanPham')->orderBy('id','DESC')->limit(2)->get();
+        $piano = sanpham::where('maSP',3)->with('LoaiSanPham')->orderBy('id','DESC')->limit(3)->get();
+        $guitar = sanpham::where('maSP',2)->with('LoaiSanPham')->orderBy('id','DESC')->limit(3)->get();
 
         view::share('pianoshare',$piano);
+        view::share('guitarshare',$guitar);
     }
 }

@@ -107,6 +107,13 @@ Route::get('logout', [
 
 
 
+Route::get('sitemap.xml', [
+    'uses' => 'SiteMapcontroller@sitemap',
+    'as' => 'Layouts.sitemap'
+]);
+
+
+
 
 
 

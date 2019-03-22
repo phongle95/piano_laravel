@@ -6,12 +6,12 @@
    <div class="container">
       <br><br>
       <div class="row">
-         <div class="col-lg-8">
+         <div class="col-lg-9">
             <h3 class="text-center font-weight-bold">SỬA CHỮA ĐÀN PIANO </h3>
             <br>
             {!! $menu->noiDung !!}
          </div>
-         <div class="col-lg-4">
+         <div class="col-lg-3">
                 @include('Layouts.facebook');
             {{--  <h2> <span class="badge badge-primary">Fanpage Facebook</span></h2>
             <br>

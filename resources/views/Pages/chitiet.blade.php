@@ -116,7 +116,7 @@
                  <div class="sidebar-wrapper">
                     <div class="widget widget-brand">
                        <a href="#">
-                          <img src="assets/images/logosalem.png" alt="brand name">
+                          <img src="assets/images/logosalem.png" width="160px" height="100px" alt="Salem piano">
                        </a>
                     </div><!-- End .widget -->
 

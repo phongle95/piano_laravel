@@ -6,11 +6,11 @@
    <div class="container">
       <br><br>
       <div class="row">
-         <div class="col-lg-8">
+         <div class="col-lg-9">
             <h3 class="text-center font-weight-bold">KHO ẢNH CỦA SALEM PIANO</h3>
             <div class='embedsocial-album' data-ref="4c741c44af01313b52a22da0845f05ce77b32e46"></div><script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/embedscript/ei.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialScript"));</script>
          </div>
-         <div class="col-lg-4">
+         <div class="col-lg-3">
              @include('Layouts.facebook')
             {{--  <h2> <span class="badge badge-primary">Fanpage Facebook</span></h2>
             <br>
