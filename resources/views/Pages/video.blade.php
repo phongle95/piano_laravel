@@ -11,12 +11,13 @@
             <div class='embedsocial-album' data-ref="4c741c44af01313b52a22da0845f05ce77b32e46"></div><script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/embedscript/ei.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialScript"));</script>
          </div>
          <div class="col-lg-4">
-            <h2> <span class="badge badge-primary">Fanpage Facebook</span></h2>
+             @include('Layouts.facebook')
+            {{--  <h2> <span class="badge badge-primary">Fanpage Facebook</span></h2>
             <br>
             <iframe
                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpianonhapkhaudanang&tabs=timeline&width=340&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
                width="340" height="600" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-               allowTransparency="true" allow="encrypted-media"></iframe>
+               allowTransparency="true" allow="encrypted-media"></iframe>  --}}
          </div>
       </div>
       <br><br><br>
