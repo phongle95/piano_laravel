@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th3 21, 2019 lúc 03:20 PM
+-- Thời gian đã tạo: Th3 23, 2019 lúc 03:33 PM
 -- Phiên bản máy phục vụ: 10.1.37-MariaDB
 -- Phiên bản PHP: 7.3.0
 
@@ -41,8 +41,9 @@ CREATE TABLE `khachhang` (
 --
 
 INSERT INTO `khachhang` (`id`, `tenKH`, `img`, `diaChi`, `danhGia`) VALUES
-(1, 'Mỹ Linh', '4q9BmDIRuKNbsfee8AYmzS2JtHXqKu3OqJGqZ9RO.jpeg', 'Đà Nẵng', 'Tại Salem Piano e đã được tư vấn rất nhiệt tình và e đã mua được cho mình sản phẩm ưng ý e sẽ giới thiệu bạn bè đến mua tại salem piano'),
-(3, 'Thanh Hằng', '0V9Qu5U2ev5qGWfRKYHPArIZffLWkmocZDMtN5Rc.jpeg', 'Quản Ngãi', 'Cảm ơn a chủ của salem piano đã tư vấn rất nhiệt tình giá cả rẻ  mà chất lượng tuyệt vời  nhất định lần sau sẻ ghé cửa hàng a mua nữa <3');
+(8, 'Mỹ Linh', '1rWsF5H5mN1Au7dXhtY4LiFxZvWbq5sMtGnRGRmQ.jpeg', 'Quảng Ngãi', 'Cảm ơn a chủ của salem piano đã tư vấn rất nhiệt tình giá cả rẻ mà chất lượng tuyệt vời nhất định lần sau sẻ ghé cửa hàng a mua nữa <3'),
+(9, 'Lan Ngọc', 'blwNaeWVXSD2V7bCa8tLs0iYEnLNBmxF0OXxSHNP.jpeg', 'Đà Nẵng', 'Cảm ơn a chủ của salem piano đã tư vấn rất nhiệt tình giá cả rẻ mà chất lượng tuyệt vời nhất định lần sau sẻ ghé cửa hàng a mua nữa <3'),
+(10, 'Triệu mẫn', 'lj1JDYgy6PnUr0YIzsvGVJqkuKAxmebrf9tjoPsy.jpeg', 'Huế', 'Cảm ơn a chủ của salem piano đã tư vấn rất nhiệt tình giá cả rẻ mà chất lượng tuyệt vời nhất định lần sau sẻ ghé cửa hàng a mua nữa <3');
 
 -- --------------------------------------------------------
 
@@ -199,7 +200,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT cho bảng `khachhang`
 --
 ALTER TABLE `khachhang`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT cho bảng `loaisanpham`
@@ -217,7 +218,7 @@ ALTER TABLE `menu`
 -- AUTO_INCREMENT cho bảng `sanpham`
 --
 ALTER TABLE `sanpham`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT cho bảng `users`
