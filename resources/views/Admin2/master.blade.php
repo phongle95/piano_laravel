@@ -78,7 +78,7 @@
           <li class="nav-item nav-profile">
             <a href="#" class="nav-link">
               <div class="nav-profile-image">
-                <img src="https://www.facebook.com/search/async/profile_picture/?fbid=100005546700368&width=72&height=72" alt="profile">
+                <img src="/admin/images/abc.jpg" alt="profile">
                 <span class="login-status online"></span> <!--change to offline or busy as needed-->
               </div>
               <div class="nav-profile-text d-flex flex-column">

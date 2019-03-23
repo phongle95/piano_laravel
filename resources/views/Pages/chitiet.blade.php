@@ -23,18 +23,13 @@
                     <div class="row">
                        <div class="col-lg-7 col-md-6 product-single-gallery">
                           <div class="product-slider-container product-item">
-                             <div class="product-single-carousel owl-carousel owl-theme">
+                             <div class="">
                                 <div class="product-item">
-                                   <img class="product-single-image"
-                                      src="/upload/{{ $chitiet->img }}"
-                                      data-zoom-image="/upload/{{ $chitiet->img }}  " />
+                                    <img class="custom-image-product"  src="/upload/{{ $chitiet->img }}" alt="salem piano">
                                 </div>
 
                              </div>
-                             <!-- End .product-single-carousel -->
-                             <span class="prod-full-screen">
-                                <i class="icon-plus"></i>
-                             </span>
+
                           </div>
 
                        </div><!-- End .col-lg-7 -->
@@ -58,12 +53,22 @@
                              <div class="product-desc">
                                 <p>{{  $chitiet->tomTat }}</p>
                              </div><!-- End .product-desc -->
+                             <h2> <span class="badge badge-warning">Lên Hệ Mua Hàng</span></h2>
+                            <br>
+                            <div class="product-action product-all-icons">
+                                <a href="tel:+ 039 469 0998" style="padding-right:50px">
+                                    <img src="https://img.icons8.com/ios/50/000000/phone-not-being-used-filled.png">
+                                </a>
+
+                                <a href="https://www.facebook.com/pianonhapkhaudanang/">
+
+                                    <img src="https://img.icons8.com/color/48/000000/facebook-messenger.png">
+
+                                </a>
+
+                            </div><!-- End .product-action -->
 
 
-                             <div class="product-single-share">
-                                <!-- www.addthis.com share plugin-->
-                                <div class="addthis_inline_share_toolbox"></div>
-                             </div><!-- End .product single-share -->
                           </div><!-- End .product-single-details -->
                        </div><!-- End .col-lg-5 -->
                     </div><!-- End .row -->
@@ -141,8 +146,8 @@
                     <h2> <span class="badge badge-primary">Fanpage Facebook</span></h2>
                     <br>
                     <iframe
-                       src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpianonhapkhaudanang&tabs=timeline&width=340&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-                       width="340" height="600" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                       src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpianonhapkhaudanang&tabs=timeline&width=280&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                       width="100%" height="600" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
                        allowTransparency="true" allow="encrypted-media"></iframe>
 
 
