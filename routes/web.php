@@ -28,17 +28,17 @@ Route::get('/', function () {
 Route::get('',['uses'=>'TrangChuController@trangchu','as'=>'Pages.trangchu'] );
 
 //chitiet
-Route::get('Dan-{slug}-{id}-gia-re-tai-da-nang.html',['uses'=>'TrangChuController@chitiet','as'=>'Pages.chitiet'] );
+Route::get('Dan-{slug}-{id}-ở-da-nang.html',['uses'=>'TrangChuController@chitiet','as'=>'Pages.chitiet'] );
 
 //san pham
-Route::get('san-pham-dan-piano-tai-da-nang-cua-salem-piano',['uses'=>'TrangChuController@sanpham','as'=>'Pages.sanpham'] );
+Route::get('Piano-Da-Nang',['uses'=>'TrangChuController@sanpham','as'=>'Pages.sanpham'] );
 
 
 //gioi thieu
 Route::get('gioi-thieu-ve-salem-piano',['uses'=>'TrangChuController@gioithieu','as'=>'Pages.gioithieu'] );
 
 //dich vu sua chua
-Route::get('sua-chua-dan-piano-tai-da-nang',['uses'=>'TrangChuController@suachua','as'=>'Pages.suachua'] );
+Route::get('sua-dan-piano-tai-da-nang',['uses'=>'TrangChuController@suachua','as'=>'Pages.suachua'] );
 
 //to chuc su kien
 Route::get('to-chuc-su-kien-tai-da-nang',['uses'=>'TrangChuController@TCSK','as'=>'Pages.tochucsukien'] );
