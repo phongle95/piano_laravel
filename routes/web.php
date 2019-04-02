@@ -76,10 +76,10 @@ Route::get('video-cua-salem-piano',['uses'=>'TrangChuController@video','as'=>'Pa
 
 
 
-Route::get('danh-sach-san', [
-    'uses' => 'sanphamcontroller@getDanhSachSanPham',
-    'as' => 'PageAdmin.sanpham'
-]);
+// Route::get('danh-sach-san', [
+//     'uses' => 'sanphamcontroller@getDanhSachSanPham',
+//     'as' => 'PageAdmin.sanpham'
+// ]);
 
 
 
@@ -184,7 +184,7 @@ Route::prefix('salem-admin')->middleware('auth')->group(function () {
 
         Route::post('them', [
             'uses' => 'Admin1controller@postThem',
-            'as' => 'PageAdmin.sanpham.them'
+            'as' => 'PageAdmin1.sanpham.them'
         ]);
 
         Route::get('sua/{id}', [

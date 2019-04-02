@@ -10,6 +10,7 @@ use App\Http\Requests\SPRequest;
 use App\KhachHang;
 use App\menu;
 use App\Http\Requests\khachHangRequest;
+use App\Http\Requests\KhachHangSuaRequest;
 use Illuminate\Support\Facades\Auth;
 
 
@@ -228,7 +229,7 @@ class Admin1controller extends Controller
     }
 
 
-    public function postSuaKhachHang(Request $request,$id){
+    public function postSuaKhachHang(KhachHangSuaRequest $request,$id){
         $khachhang = KhachHang::find($id);
         $khachhang->tenKH = $request->tenKH;
         $khachhang->diaChi = $request->diaChi;
