@@ -34,7 +34,7 @@ class KhachHangSuaRequest extends FormRequest
     {
         return [
             'tenKH.required' => 'Tên khách hàng không hợp lệ',
-            'diChi.required' => 'Địa chỉ không hợp lệ',
+            'diaChi.required' => 'Địa chỉ không hợp lệ',
             'danhGia.required' => 'Đánh giá không hợp lệ',
 
         ];
