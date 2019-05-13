@@ -2,10 +2,10 @@
 -- version 4.8.4
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Apr 02, 2019 at 06:55 AM
--- Server version: 10.1.37-MariaDB
--- PHP Version: 7.3.1
+-- Máy chủ: 127.0.0.1
+-- Thời gian đã tạo: Th5 13, 2019 lúc 09:05 AM
+-- Phiên bản máy phục vụ: 10.1.37-MariaDB
+-- Phiên bản PHP: 7.3.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `salempiano`
+-- Cơ sở dữ liệu: `salempiano`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `khachhang`
+-- Cấu trúc bảng cho bảng `khachhang`
 --
 
 CREATE TABLE `khachhang` (
@@ -37,18 +37,18 @@ CREATE TABLE `khachhang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `khachhang`
+-- Đang đổ dữ liệu cho bảng `khachhang`
 --
 
 INSERT INTO `khachhang` (`id`, `tenKH`, `img`, `diaChi`, `danhGia`) VALUES
-(1, 'Mỹ Linh', '4q9BmDIRuKNbsfee8AYmzS2JtHXqKu3OqJGqZ9RO.jpeg', 'Đà Nẵng', 'Tại Salem Piano e đã được tư vấn rất nhiệt tình và e đã mua được cho mình sản phẩm ưng ý e sẽ giới thiệu bạn bè đến mua tại salem piano'),
-(3, 'Thanh Hằng', '0V9Qu5U2ev5qGWfRKYHPArIZffLWkmocZDMtN5Rc.jpeg', 'Quản Ngãi', 'Cảm ơn a chủ của salem piano đã tư vấn rất nhiệt tình giá cả rẻ  mà chất lượng tuyệt vời  nhất định lần sau sẻ ghé cửa hàng a mua nữa <3'),
-(4, 'Mỹ Tâm', 'rZ6K8Rl7YwrXRUu8VAxo4t7L7FOTvuZcM7UvII3K.jpeg', 'Đà Nẵng', 'Mình đã thuê đàn piano ở Salem  Piano để quay MV vừa rồi tại Đà Nẵng . Anh chủ rất dễ thương và nhiệt tình');
+(5, 'Mỹ Tâm', 'FesHj6jlglCTX2Oxa5hs8ylFsxvfCvDiioPedyDZ.jpeg', 'Đà Nẵng', 'Mình đã thuê đàn piano ở Salem Piano để quay MV vừa rồi tại Đà Nẵng . Anh chủ rất dễ thương và nhiệt tình'),
+(6, 'Mỹ Linh', 'rZQCPyv2LPhchfYndNry4q51ou58A2yGyrp6CMOw.jpeg', 'Quản Ngãi', 'Cảm ơn a chủ của salem piano đã tư vấn rất nhiệt tình giá cả rẻ mà chất lượng tuyệt vời nhất định lần sau sẻ ghé cửa hàng a mua nữa <3'),
+(7, 'Thanh Hằng', 'PnWspSuIpt9ZdqzkDCTPf9rIpbksxIhfgVs4hX1Z.jpeg', 'Quảng Nam', 'Tại Salem Piano e đã được tư vấn rất nhiệt tình và e đã mua được cho mình sản phẩm ưng ý e sẽ giới thiệu bạn bè đến mua tại salem piano');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `loaisanpham`
+-- Cấu trúc bảng cho bảng `loaisanpham`
 --
 
 CREATE TABLE `loaisanpham` (
@@ -57,7 +57,7 @@ CREATE TABLE `loaisanpham` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `loaisanpham`
+-- Đang đổ dữ liệu cho bảng `loaisanpham`
 --
 
 INSERT INTO `loaisanpham` (`maSP`, `tenSP`) VALUES
@@ -69,7 +69,25 @@ INSERT INTO `loaisanpham` (`maSP`, `tenSP`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `menu`
+-- Cấu trúc bảng cho bảng `loaitin`
+--
+
+CREATE TABLE `loaitin` (
+  `id` int(11) NOT NULL,
+  `tenLoaiTin` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `loaitin`
+--
+
+INSERT INTO `loaitin` (`id`, `tenLoaiTin`) VALUES
+(1, 'Tin Tức');
+
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `menu`
 --
 
 CREATE TABLE `menu` (
@@ -79,7 +97,7 @@ CREATE TABLE `menu` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `menu`
+-- Đang đổ dữ liệu cho bảng `menu`
 --
 
 INSERT INTO `menu` (`id`, `tenMenu`, `noiDung`) VALUES
@@ -92,7 +110,31 @@ INSERT INTO `menu` (`id`, `tenMenu`, `noiDung`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `sanpham`
+-- Cấu trúc bảng cho bảng `news`
+--
+
+CREATE TABLE `news` (
+  `id` int(11) NOT NULL,
+  `tieuDe` varchar(500) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `tomTat` varchar(500) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `keyword` varchar(500) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `img` varchar(500) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `date` date NOT NULL,
+  `noiDung` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `maLoaiTin` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `news`
+--
+
+INSERT INTO `news` (`id`, `tieuDe`, `tomTat`, `keyword`, `img`, `date`, `noiDung`, `maLoaiTin`) VALUES
+(1, 'aa', 'as', 'cd', 'A236LmipnhMS5zueJqo4kLXeVMo2749mJf5K0HCj.jpeg', '2019-05-13', '<p>a</p>', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `sanpham`
 --
 
 CREATE TABLE `sanpham` (
@@ -110,7 +152,7 @@ CREATE TABLE `sanpham` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `sanpham`
+-- Đang đổ dữ liệu cho bảng `sanpham`
 --
 
 INSERT INTO `sanpham` (`id`, `tenSP`, `title`, `description`, `keyword`, `gia`, `img`, `tomTat`, `MTSP`, `TSKT`, `maSP`) VALUES
@@ -140,7 +182,7 @@ INSERT INTO `sanpham` (`id`, `tenSP`, `title`, `description`, `keyword`, `gia`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Cấu trúc bảng cho bảng `users`
 --
 
 CREATE TABLE `users` (
@@ -151,7 +193,7 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `users`
+-- Đang đổ dữ liệu cho bảng `users`
 --
 
 INSERT INTO `users` (`id`, `fullname`, `username`, `password`) VALUES
@@ -159,69 +201,93 @@ INSERT INTO `users` (`id`, `fullname`, `username`, `password`) VALUES
 (2, 'admin', 'admin', '123');
 
 --
--- Indexes for dumped tables
+-- Chỉ mục cho các bảng đã đổ
 --
 
 --
--- Indexes for table `khachhang`
+-- Chỉ mục cho bảng `khachhang`
 --
 ALTER TABLE `khachhang`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `loaisanpham`
+-- Chỉ mục cho bảng `loaisanpham`
 --
 ALTER TABLE `loaisanpham`
   ADD PRIMARY KEY (`maSP`);
 
 --
--- Indexes for table `menu`
+-- Chỉ mục cho bảng `loaitin`
+--
+ALTER TABLE `loaitin`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Chỉ mục cho bảng `menu`
 --
 ALTER TABLE `menu`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `sanpham`
+-- Chỉ mục cho bảng `news`
+--
+ALTER TABLE `news`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Chỉ mục cho bảng `sanpham`
 --
 ALTER TABLE `sanpham`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `users`
+-- Chỉ mục cho bảng `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT cho các bảng đã đổ
 --
 
 --
--- AUTO_INCREMENT for table `khachhang`
+-- AUTO_INCREMENT cho bảng `khachhang`
 --
 ALTER TABLE `khachhang`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT for table `loaisanpham`
+-- AUTO_INCREMENT cho bảng `loaisanpham`
 --
 ALTER TABLE `loaisanpham`
-  MODIFY `maSP` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `maSP` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `menu`
+-- AUTO_INCREMENT cho bảng `loaitin`
+--
+ALTER TABLE `loaitin`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT cho bảng `menu`
 --
 ALTER TABLE `menu`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `sanpham`
+-- AUTO_INCREMENT cho bảng `news`
 --
-ALTER TABLE `sanpham`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+ALTER TABLE `news`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `users`
+-- AUTO_INCREMENT cho bảng `sanpham`
+--
+ALTER TABLE `sanpham`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+
+--
+-- AUTO_INCREMENT cho bảng `users`
 --
 ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;

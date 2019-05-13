@@ -54,20 +54,19 @@
                                 <p>{{  $chitiet->tomTat }}</p>
                              </div><!-- End .product-desc -->
                              <h2> <span class="badge badge-warning">Lên Hệ Mua Hàng</span></h2>
-                            <br>
-                            <div class="product-action product-all-icons">
-                                <a href="tel:+ 039 469 0998" style="padding-right:50px">
-                                    <img src="https://img.icons8.com/ios/50/000000/phone-not-being-used-filled.png">
-                                </a>
+                            <!-- End .product-action -->
+                            <div class="row">
 
-                                <a href="https://www.facebook.com/pianonhapkhaudanang/">
-
-                                    <img src="https://img.icons8.com/color/48/000000/facebook-messenger.png">
-
-                                </a>
-
-                            </div><!-- End .product-action -->
-
+                                <div class="col-sm-6">
+                                        <br>
+                                    <a target="_blank" href="https://www.facebook.com/pianonhapkhaudanang/"><img width="100%" src="assets/images/chat-facebook.png" alt="chat-facebook"></a>
+                                </div>
+                                <div class="col-sm-6">
+                                        <br>
+                                    <a target="_blank" href="https://zalo.me/0394690998"><img width="100%" src="assets/images/chat-zalo.png" alt="chat-zalo"></a>
+                                </div>
+                            </div>
+                        <!-- End .product single-share -->
 
                           </div><!-- End .product-single-details -->
                        </div><!-- End .col-lg-5 -->

@@ -113,6 +113,18 @@
             </a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="{{ route('PageAdmin1.loaitin.danhsach') }}">
+              <span class="menu-title">Loại Tin</span>
+              <i class="mdi mdi-note-plus menu-icon"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ route('PageAdmin1.tin.danhsach') }}">
+              <span class="menu-title">Tin Tức</span>
+              <i class="mdi mdi-newspaper menu-icon"></i>
+            </a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="{{ route('PageAdmin1.logout') }}">
               <span class="menu-title">Đăng Xuất</span>
               <i class="mdi mdi-logout menu-icon"></i>

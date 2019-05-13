@@ -5,10 +5,14 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\LoaiSanPham;
 use App\sanpham;
-use App\Http\Requests\sanphamrequest;
-use App\Http\Requests\SPRequest;
 use App\KhachHang;
 use App\menu;
+use App\loaitin;
+use App\news;
+use App\Http\Requests\sanphamrequest;
+use App\Http\Requests\SPRequest;
+use App\Http\Requests\TinRequest;
+use App\Http\Requests\TinSuaRequest;
 use App\Http\Requests\khachHangRequest;
 use App\Http\Requests\KhachHangSuaRequest;
 use Illuminate\Support\Facades\Auth;
@@ -174,11 +178,13 @@ class Admin1controller extends Controller
     //     return redirect(route('PageAdmin.menu.danhsach'));
     // }
 
+    // get sửa menu
     public function getSuaMenu($id){
         $menu = menu::find($id);
         return view('PageAdmin1.menu.sua',['menu'=>$menu]);
     }
 
+    // post sửa menu
     public function postSuaMenu(Request $request,$id){
         $menu = menu::find($id);
         $menu->tenMenu = $request->tenMenu;
@@ -188,21 +194,19 @@ class Admin1controller extends Controller
         return redirect(route('PageAdmin1.menu.danhsach'))->with('thongbao','Sửa thành công');
     }
 
-
-
-
-
-
+    // get danh sách khách hàng
     public function getDanhSachKhachHang(){
         $khachhang = KhachHang::all();
         return view('PageAdmin1.khachhang.danhsach',['khachhang'=>$khachhang]);
     }
 
+    // get thêm khách hàng
     public function getThemKhachHang(){
 
         return view('PageAdmin1.khachhang.them');
     }
 
+    // post thêm khách hàng
     public function postThemKhachHang(khachHangRequest $request){
         $khachhang = new KhachHang;
         $khachhang->tenKH = $request->tenKH;
@@ -223,12 +227,13 @@ class Admin1controller extends Controller
         return redirect(route('PageAdmin1.khachhang.danhsach'))->with('thongbao','Thêm thành công');
     }
 
+    // get sửa khách hàng
     public function getSuaKhachHang($id){
         $khachhang = KhachHang::find($id);
         return view('PageAdmin1.khachhang.sua',['khachhang'=>$khachhang]);
     }
 
-
+    // post sửa khách hàng
     public function postSuaKhachHang(KhachHangSuaRequest $request,$id){
         $khachhang = KhachHang::find($id);
         $khachhang->tenKH = $request->tenKH;
@@ -249,12 +254,123 @@ class Admin1controller extends Controller
 
     }
 
+    // xóa khách hàng
     public function getXoaKhachHang($id){
         $khachhang = KhachHang::find($id);
         $khachhang->delete();
         return redirect(route('PageAdmin1.khachhang.danhsach'))->with('xoa','Xóa thành công');
     }
 
+    // danh sách loại tin
+    public function listLoaiTin(){
+        $loaitin = loaitin::all();
+        return view('PageAdmin1.loaitin.danhsach',['loaitin'=>$loaitin]);
+    }
+
+    // get thêm loại tin
+    public function getThemLoaiTin(){
+        return view('PageAdmin1.loaitin.them');
+    }
+
+    // post thêm loai tin
+    public function posthemLoaiTin(Request $request){
+        $loaitin  = new loaitin;
+        $loaitin->tenLoaiTin = $request->tenLoaiTin;
+        $loaitin->save();
+        return redirect(route('PageAdmin1.loaitin.danhsach'))->with('thongbao','Thêm thành công');
+    }
+
+    // get sửa loại tin
+    public function getSuaLoaiTin($id){
+        $loaitin = loaitin::find($id);
+
+        return view('PageAdmin1.loaitin.sua',['loaitin'=>$loaitin]);
+    }
+
+    // post sửa loại tin
+    public function postSuaLoaiTin(Request $request,$id){
+        $loaitin = loaitin::find($id);
+        $loaitin->tenLoaiTin = $request->tenLoaiTin;
+        $loaitin->save();
+        return redirect(route('PageAdmin1.loaitin.danhsach'))->with('thongbao','Sửa thành công');
+    }
+
+    // xóa loại tin
+    public function deleteLoaiTin($id){
+        $loaitin = loaitin::find($id);
+        $loaitin->delete();
+        return redirect(route('PageAdmin1.loaitin.danhsach'))->with('xoa','Xóa thành công');
+    }
+
+    // tin tức
+    public function getDanhSachTin(){
+        $tin = news::orderBy('id','DESC')->get();
+        $loaitin = loaitin::all();
+        return view('PageAdmin1.tin.danhsach',['tin'=>$tin,'loaitin'=>$loaitin]);
+    }
+
+    public function getThemTin(){
+        $loaitin = loaitin::all();
+        return view('PageAdmin1.tin.them',['loaitin'=>$loaitin]);
+    }
+
+    public function postThemTin(TinRequest $request){
+
+        $tin = new news;
+        $tin->tieuDe = $request->tieuDe;
+        $tin->tomTat = $request->tomTat;
+        $tin->keyword = $request->keyword;
+        $tin->date = $request->date;
+        $tin->noiDung = $request->noiDung;
+        $tin->maLoaiTin = $request->maLoaiTin;
+
+        $file = $request->file('img');
+
+
+        if ($file !="") {
+            $img = $file->store("/", ['disk'=>'upload']);
+            $tin->img=$img;
+        }
+        else{
+            $tin->img="defau.png";
+        }
+
+
+        $tin->save();
+        return redirect(route('PageAdmin1.tin.danhsach'))->with('thongbao','Thêm thành công');
+    }
+
+    public function getSuaTin($id){
+        $loaitin = loaitin::all();
+        $tin = news::find($id);
+        return view('PageAdmin1.tin.sua',['tin'=>$tin,'loaitin'=>$loaitin]);
+    }
+
+    public function postSuaTin(TinSuaRequest $request,$id){
+        $tin = news::find($id);
+        $tin->tieuDe = $request->tieuDe;
+        $tin->tomTat = $request->tomTat;
+        $tin->keyword = $request->keyword;
+        $tin->date = $request->date;
+        $tin->noiDung = $request->noiDung;
+        $tin->maLoaiTin = $request->maLoaiTin;
+
+        $file = $request->file('img');
+        if ($file !="") {
+            $img = $file->store("/", ['disk'=>'upload']);
+            unlink(public_path()."/upload/".$tin->img);
+            $tin->img=$img;
+        }
+        $tin->save();
+        return redirect(route('PageAdmin1.tin.danhsach'))->with('thongbao','Sửa thành công');
+    }
+
+    public function getXoaTin($id){
+        $tin = news::find($id);
+        unlink(public_path()."/upload/".$tin->img);
+        $tin->delete();
+        return redirect(route('PageAdmin1.tin.danhsach'))->with('xoa','Xóa thành công');
+    }
 
 
     //login logout

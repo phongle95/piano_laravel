@@ -23,7 +23,7 @@
 </main>
 <!-- End .main -->
 @endsection @section('meta')
-<title>Music Center Học Piano ở Đà Nẵng - Piano Đà Nẵng - Guitar Đà Nẵng</title>
+<title>Học Piano Đà Nẵng</title>
 <meta name="keywords" content="salem piano , cửa hàng piano ở đà nẵng , piano đà nẵng , music center ,piano center ,dạy học đàn piano ở đà nẵng , sửa chữa piano tại đà nẵng ,tổ chức sự kiện tại đà nẵng" />
 <meta name="description" content='Piano center , Music center Chuyên mua Bán đàn piano được nhập khẩu từ nhật bản và dạy học đàn piano ở đà nẵng và các loại nhạc cụ' />
 <!--meta facebook-->

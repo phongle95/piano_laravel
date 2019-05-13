@@ -31,7 +31,7 @@ Route::get('',['uses'=>'TrangChuController@trangchu','as'=>'Pages.trangchu'] );
 Route::get('Dan-{slug}-{id}-ở-da-nang.html',['uses'=>'TrangChuController@chitiet','as'=>'Pages.chitiet'] );
 
 //san pham
-Route::get('Piano-Da-Nang',['uses'=>'TrangChuController@sanpham','as'=>'Pages.sanpham'] );
+Route::get('piano-da-nang',['uses'=>'TrangChuController@sanpham','as'=>'Pages.sanpham'] );
 
 
 //gioi thieu
@@ -57,7 +57,7 @@ Route::get('day-hoc-dan-piano-o-da-nang',['uses'=>'TrangChuController@giaoduc','
 Route::get('piano-da-nang-',['uses'=>'TrangChuController@timkiem','as'=>'Pages.timkiem'] );
 
 // video
-Route::get('video-cua-salem-piano',['uses'=>'TrangChuController@video','as'=>'Pages.video'] );
+Route::get('album',['uses'=>'TrangChuController@video','as'=>'Pages.video'] );
 
 
 
@@ -131,7 +131,7 @@ Route::prefix('salem-admin')->middleware('auth')->group(function () {
     ]);
 
      //danh sach loai san pham
-     Route::group(['prefix' => 'loai-san-pham'], function() {
+    Route::group(['prefix' => 'loai-san-pham'], function() {
 
         Route::get('danh-sach', [
             'uses' => 'Admin1controller@getDanhSachLoai',
@@ -169,7 +169,8 @@ Route::prefix('salem-admin')->middleware('auth')->group(function () {
 
 
      //san pham
-     Route::group(['prefix' => 'san-pham'], function() {
+    Route::group(['prefix' => 'san-pham'], function() {
+
         //san pham
         Route::get('danh-sach', [
             'uses' => 'Admin1controller@getDanhSach',
@@ -204,6 +205,72 @@ Route::prefix('salem-admin')->middleware('auth')->group(function () {
 
 
     });
+
+
+    Route::group(['prefix' => 'loai-tin'], function() {
+        Route::get('danh-sach', [
+            'uses' => 'Admin1controller@listLoaiTin',
+            'as' => 'PageAdmin1.loaitin.danhsach'
+        ]);
+
+         Route::get('them', [
+            'uses' => 'Admin1controller@getThemLoaiTin',
+            'as' => 'PageAdmin1.loaitin.them'
+        ]);
+
+        Route::post('them', [
+            'uses' => 'Admin1controller@posthemLoaiTin',
+            'as' => 'PageAdmin1.loaitin.them'
+        ]);
+
+        Route::get('sua/{id}', [
+            'uses' => 'Admin1controller@getSuaLoaiTin',
+            'as' => 'PageAdmin1.loaitin.sua'
+        ]);
+
+        Route::post('sua/{id}', [
+            'uses' => 'Admin1controller@postSuaLoaiTin',
+            'as' => 'PageAdmin1.loaitin.sua'
+        ]);
+
+        Route::get('xoa/{id}', [
+            'uses' => 'Admin1controller@deleteLoaiTin',
+            'as' => 'PageAdmin1.loaitin.xoa'
+        ]);
+    });
+
+    Route::group(['prefix' => 'tin-tuc'], function () {
+        Route::get('danh-sach', [
+            'uses' => 'Admin1controller@getDanhSachTin',
+            'as' => 'PageAdmin1.tin.danhsach'
+        ]);
+
+        Route::get('them', [
+            'uses' => 'Admin1controller@getThemTin',
+            'as' => 'PageAdmin1.tin.them'
+        ]);
+
+        Route::post('them', [
+            'uses' => 'Admin1controller@postThemTin',
+            'as' => 'PageAdmin1.tin.them'
+        ]);
+
+        Route::get('sua/{id}', [
+            'uses' => 'Admin1controller@getSuaTin',
+            'as' => 'PageAdmin1.tin.sua'
+        ]);
+
+        Route::post('sua/{id}', [
+            'uses' => 'Admin1controller@postSuaTin',
+            'as' => 'PageAdmin1.tin.sua'
+        ]);
+
+        Route::get('xoa/{id}', [
+            'uses' => 'Admin1controller@getXoaTin',
+            'as' => 'PageAdmin1.tin.xoa'
+        ]);
+    });
+
 
 
     Route::group(['prefix' => 'menu'], function () {
