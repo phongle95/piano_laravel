@@ -99,7 +99,7 @@
     <!-- margin -->
     <div class="featured-section">
        <div class="container">
-          <h2 class="carousel-title">Đàn Piano HOT</h2>
+          <h2 class="carousel-title text-center">Đàn Piano HOT</h2>
           <div class="featured-products owl-carousel owl-theme owl-dots-top">
 
              @foreach ($piano as $item)
@@ -152,7 +152,7 @@
     <!-- End .featured-section -->
     <div class="featured-section">
        <div class="container">
-          <h2 class="carousel-title">Đàn Guitar HOT</h2>
+          <h2 class="carousel-title text-center">Đàn Guitar HOT</h2>
           <div class="featured-products owl-carousel owl-theme owl-dots-top">
 
              @foreach ($guitar as $item)
@@ -208,7 +208,7 @@
     <!-- End .featured-section -->
     <div class="featured-section">
        <div class="container">
-          <h2 class="carousel-title">Dịch vụ của Salem Piano</h2>
+          <h2 class="carousel-title text-center">Dịch vụ của Salem Piano</h2>
           <div class="featured-products owl-carousel owl-theme owl-dots-top">
 
 

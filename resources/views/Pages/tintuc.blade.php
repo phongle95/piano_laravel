@@ -70,7 +70,7 @@
             </div>
             <!-- End .col-lg-9 -->
             <aside class="sidebar col-lg-3">
-                {{--  @include('Layouts.sidebar')  --}}
+                 @include('Layouts.sidebar')
             </aside>
             <!-- End .col-lg-3 -->
         </div>
@@ -96,5 +96,5 @@
 <meta itemprop="name" content="Music center chuyên dạy học các loại nhạc cụ như piano guitar drum và bán các loại đàn piano nhập khẩu trực tiếp tại nhật bản" />
 <meta itemprop="description" content="Salem piano center chuyên cung cấp các loại đàn piano nhập khẩu tại nhật bản và Đào tạo âm nhạc Music center dạy học đàn piano và các loại nhạc cụ" />
 <meta itemprop="image" content= "assets/images/gita.jpg" />
-<meta name="og:url" content="{{ route('Pages.tintuc') }}"/>
+<meta name="og:url" content="{{ route('Pages.sanpham') }}"/>
 @endsection

@@ -43,7 +43,7 @@
    <!-- margin -->
    <div class="featured-section">
       <div class="container">
-         <h2 class="carousel-title">Đàn Piano Grand</h2>
+         <h2 class="carousel-title text-center">Đàn Piano Grand</h2>
          <div class="featured-products owl-carousel owl-theme owl-dots-top">
 
                 @foreach ($grand as $item)
@@ -96,7 +96,7 @@
    <!-- End .featured-section -->
    <div class="featured-section">
         <div class="container">
-           <h2 class="carousel-title">ĐÀN PIANO UPRIGHT</h2>
+           <h2 class="carousel-title text-center">ĐÀN PIANO UPRIGHT</h2>
            <div class="featured-products owl-carousel owl-theme owl-dots-top">
 
               @foreach ($upright as $item)
@@ -152,7 +152,7 @@
 
      <div class="featured-section">
             <div class="container">
-               <h2 class="carousel-title">ĐÀN PIANO ĐIỆN</h2>
+               <h2 class="carousel-title text-center">ĐÀN PIANO ĐIỆN</h2>
                <div class="featured-products owl-carousel owl-theme owl-dots-top">
 
                   @foreach ($digital as $item)
@@ -208,7 +208,7 @@
 
    <div class="featured-section">
       <div class="container">
-         <h2 class="carousel-title">Đàn Guitar HOT</h2>
+         <h2 class="carousel-title text-center">Đàn Guitar HOT</h2>
          <div class="featured-products owl-carousel owl-theme owl-dots-top">
 
                 @foreach ($guitar as $item)
@@ -261,7 +261,7 @@
 
    <div class="testimonials-section">
         <div class="container">
-           <h2 class="subtitle text-center">Ý KIẾN KHÁCH HÀNG</h2>
+           <h2 class="subtitle text-center ">Ý KIẾN KHÁCH HÀNG</h2>
            <div class="testimonials-carousel owl-carousel owl-theme">
                @foreach ($khachhang as $item)
 

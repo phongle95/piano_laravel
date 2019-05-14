@@ -60,9 +60,9 @@ Route::get('piano-da-nang-',['uses'=>'TrangChuController@timkiem','as'=>'Pages.t
 Route::get('album',['uses'=>'TrangChuController@video','as'=>'Pages.video'] );
 
 // //tin tức
-Route::get('piano-{slug}-{id}.html',['uses'=>'TrangChuController@tintuc','as'=>'Pages.tintuc']);
+Route::get('{slug}-{id}.html',['uses'=>'TrangChuController@tintuc','as'=>'Pages.tintuc']);
 
-Route::get('tin-tuc-{slug}.{id}={ma}.html', [
+Route::get('{slug}-{id}.{ma}.html', [
     'uses' => 'TrangChuController@chiTietNews',
     'as' => 'Pages.detailnews'
 ]);

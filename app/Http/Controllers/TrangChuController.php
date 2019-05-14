@@ -66,13 +66,18 @@ class TrangChuController extends Controller
         return view('Pages.video');
     }
 
-    public function timkiem(Request $request){
+     //tìm kiếm sản phẩm
+     public function timkiem(Request $request){
         $tukhoa = $request->tukhoa;
-        $ketqua = sanpham::where('tenSP','like','%'.$tukhoa.'%')->get();
-
-        return view('Pages.timkiem',['ketqua'=>$ketqua,'tukhoa'=>$tukhoa,])->with('kq','Không có kết quả');
+        $ketqua = sanpham::where('tenSP','like','%'.$tukhoa.'%')->paginate(8);
+        if(count($ketqua)>0){
+            toastr()->success("Đã tìm thấy kết quả : $tukhoa");
+        }
+        else {
+            toastr()->error("Không tìm thấy kết quả cho : $tukhoa");
+        }
+        return view('Pages.timkiem',['ketqua'=>$ketqua]);
     }
-
     // tin tức
     public function tintuc($slug,$id){
         $tin = news::where('maLoaiTin',$id)->orderBy('id','DESC')->paginate(4);
@@ -91,10 +96,10 @@ class TrangChuController extends Controller
         $tukhoa = $request->tukhoa;
         $ketqua = news::where('tieuDe','like','%'.$tukhoa.'%')->orwhere('tomTat','like','%'.$tukhoa.'%')->paginate(4);
         if(count($ketqua)>0){
-            toastr()->success("Đã tìm thấy kết quả $tukhoa");
+            toastr()->success("Đã tìm thấy kết quả : $tukhoa");
         }
         else {
-            toastr()->error("Không tìm thấy kết quả cho $tukhoa");
+            toastr()->error("Không tìm thấy kết quả cho : $tukhoa");
         }
         return view('Pages.search',['ketqua'=>$ketqua]);
     }
