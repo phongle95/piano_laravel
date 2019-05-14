@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\sanpham;
 use App\KhachHang;
 use App\menu;
+use App\news;
 
 class TrangChuController extends Controller
 {
@@ -72,5 +73,30 @@ class TrangChuController extends Controller
         return view('Pages.timkiem',['ketqua'=>$ketqua,'tukhoa'=>$tukhoa,])->with('kq','Không có kết quả');
     }
 
+    // tin tức
+    public function tintuc($slug,$id){
+        $tin = news::where('maLoaiTin',$id)->orderBy('id','DESC')->paginate(4);
+        return view('Pages.tintuc',['tin'=>$tin]);
+    }
+
+    public function chiTietNews($slug ,$id,$ma){
+
+        $chitiet = news::find($id);
+        $news = news::where('maLoaiTin',$ma)->orderBy('id','DESC')->limit(4)->get();
+        return view('Pages.detailnews',['chitiet'=>$chitiet,'news'=>$news]);
+    }
+
+     //tìm kiếm tin tức
+     public function search(Request $request){
+        $tukhoa = $request->tukhoa;
+        $ketqua = news::where('tieuDe','like','%'.$tukhoa.'%')->orwhere('tomTat','like','%'.$tukhoa.'%')->paginate(4);
+        if(count($ketqua)>0){
+            toastr()->success("Đã tìm thấy kết quả $tukhoa");
+        }
+        else {
+            toastr()->error("Không tìm thấy kết quả cho $tukhoa");
+        }
+        return view('Pages.search',['ketqua'=>$ketqua]);
+    }
 
 }

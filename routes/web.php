@@ -59,28 +59,16 @@ Route::get('piano-da-nang-',['uses'=>'TrangChuController@timkiem','as'=>'Pages.t
 // video
 Route::get('album',['uses'=>'TrangChuController@video','as'=>'Pages.video'] );
 
+// //tin tức
+Route::get('piano-{slug}-{id}.html',['uses'=>'TrangChuController@tintuc','as'=>'Pages.tintuc']);
 
+Route::get('tin-tuc-{slug}.{id}={ma}.html', [
+    'uses' => 'TrangChuController@chiTietNews',
+    'as' => 'Pages.detailnews'
+]);
 
-
-
-
-
-
-
-
-// Route::any('admin2', function () {
-//     return view('Admin2.master');
-// });
-
-
-
-
-
-// Route::get('danh-sach-san', [
-//     'uses' => 'sanphamcontroller@getDanhSachSanPham',
-//     'as' => 'PageAdmin.sanpham'
-// ]);
-
+//tim kiếm tin tức
+Route::get('tim-kiem',['uses'=>'TrangChuController@search','as'=>'Pages.search']);
 
 
 Route::get('login', [

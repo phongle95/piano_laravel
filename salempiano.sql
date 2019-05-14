@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th5 13, 2019 lúc 09:05 AM
+-- Thời gian đã tạo: Th5 14, 2019 lúc 12:15 PM
 -- Phiên bản máy phục vụ: 10.1.37-MariaDB
 -- Phiên bản PHP: 7.3.1
 
@@ -82,7 +82,8 @@ CREATE TABLE `loaitin` (
 --
 
 INSERT INTO `loaitin` (`id`, `tenLoaiTin`) VALUES
-(1, 'Tin Tức');
+(1, 'Tin Tức'),
+(2, 'Học Viên');
 
 -- --------------------------------------------------------
 
@@ -129,7 +130,8 @@ CREATE TABLE `news` (
 --
 
 INSERT INTO `news` (`id`, `tieuDe`, `tomTat`, `keyword`, `img`, `date`, `noiDung`, `maLoaiTin`) VALUES
-(1, 'aa', 'as', 'cd', 'A236LmipnhMS5zueJqo4kLXeVMo2749mJf5K0HCj.jpeg', '2019-05-13', '<p>a</p>', 1);
+(1, 'aa', 'as', 'cd', 'A236LmipnhMS5zueJqo4kLXeVMo2749mJf5K0HCj.jpeg', '2019-05-13', '<p>a</p>', 1),
+(2, 'PHÒNG XÔNG HƠI SAUNA TẠI 117 LÊ THÁNH TÔN THÀNH PHỐ HUẾ', 'Travel lý sơn chuyên tổ chức các tour du lịch lý sơn ,đà nẵng , huế và cho thuê xe du lịch', 'asdf', 'ruc4KwqSHeRhZnca691O0BG65IBuePoUcu3V84LL.jpeg', '2019-05-14', '<p>&aacute;df</p>', 1);
 
 -- --------------------------------------------------------
 
@@ -278,7 +280,7 @@ ALTER TABLE `menu`
 -- AUTO_INCREMENT cho bảng `news`
 --
 ALTER TABLE `news`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT cho bảng `sanpham`

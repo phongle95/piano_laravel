@@ -23,7 +23,7 @@
 
     <link rel="stylesheet" href="assets/phone-css.css">
     <link rel="stylesheet" href="assets/card">
-
+    @toastr_css
 </head>
 
 <body>
@@ -96,8 +96,11 @@
                             <li>
                                 <a class="sf-with-ul">Tin Tức</a>
                                 <ul>
-                                    <li><a href="{{ route('Pages.suachua') }}">Tin Tức</a></li>
-                                    <li><a href="{{ route('Pages.tochucsukien') }}">Học Viên</a></li>
+                                    @foreach ($loaitin as $item)
+
+                                    <li><a href="{{ route('Pages.tintuc',['slug' => str_slug($item->tenLoaiTin),'id'=>$item->id]) }}">{{ $item->tenLoaiTin }}</a></li>
+                                    @endforeach
+
                                 </ul>
                             </li>
                             <li>
@@ -335,7 +338,9 @@
     <!-- Your customer chat code -->
     <div class="fb-customerchat" attribution=setup_tool page_id="1799244350296091" theme_color="#ffc300" logged_in_greeting="Salem Piano xin chào bạn, chúng mình có thể giúp gì bạn ạ?" logged_out_greeting="Salem Piano xin chào bạn, chúng mình có thể giúp gì bạn ạ?">
     </div>
-
+    @jquery
+    @toastr_js
+    @toastr_render
 </body>
 
 </html>
