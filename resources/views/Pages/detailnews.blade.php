@@ -29,7 +29,7 @@
                                 <span class="month">Jun</span>
                             </div><!-- End .entry-date -->
 
-                            <h2 style="color:#0088cc" class="entry-title">
+                            <h2 class="entry-title">
                                     {{ $chitiet->tieuDe }}
                             </h2>
 

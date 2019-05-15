@@ -25,7 +25,7 @@
                 </div>
                 <!-- End .entry-media -->
                 <div class="entry-info">
-                    <a style="color:#0088cc;" href="{{ route('Pages.detailnews',['slug'=>str_slug($item->tieuDe),'id'=>$item->id,'ma'=>$item->maLoaiTin]) }}">{{ $item->tieuDe }}</a>
+                    <a href="{{ route('Pages.detailnews',['slug'=>str_slug($item->tieuDe),'id'=>$item->id,'ma'=>$item->maLoaiTin]) }}">{{ $item->tieuDe }}</a>
                     <div class="entry-meta">
                         <span><i class="icon-calendar"></i>{{ date("d-m-Y", strtotime($item->date)) }}</span>
                     </div>
