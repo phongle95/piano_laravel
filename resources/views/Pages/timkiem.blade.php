@@ -53,15 +53,15 @@
                                     <!-- End .price-box -->
 
                                     <div class="product-action">
-                                        <a href="#" class="paction add-wishlist" title="Add to Wishlist">
+                                        <a href="{{ route('Pages.chitiet',['slug' => str_slug($item->tenSP),'id'=>$item->id]) }}" class="paction add-wishlist" title="Chi tiết">
                                             <span>Add to Wishlist</span>
                                         </a>
 
-                                        <a href="product.html" class="paction add-cart" title="Thêm vào giỏ">
-                                            <span>Thêm Vào Giỏ</span>
+                                        <a href="{{ route('Pages.chitiet',['slug' => str_slug($item->tenSP),'id'=>$item->id]) }}" class="paction add-cart" title="Chi tiết">
+                                            <span>Chi Tiết</span>
                                         </a>
 
-                                        <a href="#" class="paction add-compare" title="Add to Compare">
+                                        <a href="{{ route('Pages.chitiet',['slug' => str_slug($item->tenSP),'id'=>$item->id]) }}" class="paction add-compare" title="Chi tiết">
                                             <span>Add to Compare</span>
                                         </a>
                                     </div>
